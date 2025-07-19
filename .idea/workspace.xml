@@ -23,7 +23,37 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db742b0c-0e71-4130-a185-a31b439e7583" name="更改" comment="" />
+    <list default="true" id="db742b0c-0e71-4130-a185-a31b439e7583" name="更改" comment="add control">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/speed.c" beforeDir="false" afterPath="$PROJECT_DIR$/Control/speed.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Control/speed.h" beforeDir="false" afterPath="$PROJECT_DIR$/Control/speed.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all/start.c" beforeDir="false" afterPath="$PROJECT_DIR$/all/start.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/all/start.h" beforeDir="false" afterPath="$PROJECT_DIR$/all/start.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/cache-v2-bb797975d131de6399e1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/cmakeFiles-v1-ccc64af1e3417bcc38ad.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/codemodel-v2-4e6bb30de5720b5691bf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/index-2025-07-19T07-20-20-0098.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.cmake/api/v1/reply/target-motor_foc.elf-Debug-32f9d8ebf1db9750429c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/clion-Debug-MinGW-stm32-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/clion-Debug-MinGW-stm32-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/all/start.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/all/start.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.elf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/mt6816.c" beforeDir="false" afterPath="$PROJECT_DIR$/user/mt6816.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/mt6816.h" beforeDir="false" afterPath="$PROJECT_DIR$/user/mt6816.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/stepmotor.c" beforeDir="false" afterPath="$PROJECT_DIR$/user/stepmotor.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/stepmotor.h" beforeDir="false" afterPath="$PROJECT_DIR$/user/stepmotor.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +81,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-MinGW-stm32" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -72,6 +106,7 @@
     "OpenOCD 下载并运行.motor_foc.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.west.config.association.type.startup.service": "true",
     "cf.first.check.clang-format": "false",
@@ -84,7 +119,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "CPPToolchains",
     "structure.view.defaults.are.configured": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -100,12 +135,12 @@
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="motor_foc.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="true" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="motor_foc" TARGET_NAME="motor_foc.elf" CONFIG_NAME="Debug-MinGW-stm32" RUN_TARGET_PROJECT_NAME="motor_foc" RUN_TARGET_NAME="motor_foc.elf">
+    <configuration name="motor_foc.elf" type="CMakeRunConfiguration" factoryName="Application" singleton="false" REDIRECT_INPUT="false" ELEVATE="true" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug-MinGW-stm32" RUN_TARGET_PROJECT_NAME="motor_foc" RUN_TARGET_NAME="motor_foc.elf" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="motor_foc" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="motor_foc" TARGET_NAME="motor_foc.elf" CONFIG_NAME="Debug-MinGW-stm32" version="1" RUN_TARGET_PROJECT_NAME="motor_foc" RUN_TARGET_NAME="motor_foc.elf">
+    <configuration name="motor_foc" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="motor_foc" TARGET_NAME="motor_foc.elf" version="1" RUN_TARGET_PROJECT_NAME="motor_foc" RUN_TARGET_NAME="motor_foc.elf">
       <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="D:\DeskTop\foc\motor_foc\config\daplink.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
         <debugger kind="GDB" isBundled="true" />
       </openocd>
@@ -153,8 +188,24 @@
       <workItem from="1752841849652" duration="43000" />
       <workItem from="1752893475754" duration="4720000" />
       <workItem from="1752900646801" duration="21000" />
-      <workItem from="1752904542241" duration="4844000" />
+      <workItem from="1752904542241" duration="20068000" />
+      <workItem from="1752929647170" duration="28000" />
+      <workItem from="1752929704415" duration="414000" />
+      <workItem from="1752930404549" duration="613000" />
+      <workItem from="1752931119759" duration="659000" />
+      <workItem from="1752931789675" duration="1336000" />
+      <workItem from="1752933420138" duration="304000" />
+      <workItem from="1752933737386" duration="11000" />
     </task>
+    <task id="LOCAL-00001" summary="add control">
+      <option name="closed" value="true" />
+      <created>1752913145684</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752913145684</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +216,38 @@
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add control" />
+    <option name="LAST_COMMIT_MESSAGE" value="add control" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -172,6 +255,10 @@
           <url>file://$PROJECT_DIR$/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h</url>
           <line>151</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Src/main.c</url>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

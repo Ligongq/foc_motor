@@ -1,4 +1,5 @@
 #include "mt6816.h"
+#include "speed.h"
 uint16_t mt6816_raw=0;
 float mt6816_angle=0;
 extern SPI_HandleTypeDef hspi1;
@@ -22,9 +23,9 @@ uint16_t MT6816_ReadRaw_Alt(void)
 	// 右移2位（去掉状态），只保留14位
 	return (data >> 2) & 0x3FFF;
 }
-float MT6816_ReadAngleDeg_Alt(void)
-{
-	uint16_t raw = MT6816_ReadRaw_Alt();
-	if (raw == 0xFFFF) return -1.0f;
-	return raw * (360.0f / 16384.0f);
+void MT6816_ReadAngleDeg_Alt(void)
+{//
+	PID.Mt6816_date_now  = MT6816_ReadRaw_Alt();
+	if (PID.Mt6816_date_now == 0xFFFF) PID.angle_get_now = -1.0f;
+	PID.angle_get_now = (float)PID.Mt6816_date_now * (360.0f / 16384.0f);
 }

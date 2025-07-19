@@ -53,7 +53,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -63,7 +63,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -73,7 +73,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -83,7 +83,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -93,7 +93,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -103,7 +103,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -113,7 +113,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -123,7 +123,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -133,7 +133,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -143,7 +143,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -153,7 +153,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -163,7 +163,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_spi.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -173,7 +173,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -183,7 +183,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -193,7 +193,7 @@ build CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_ha
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -203,7 +203,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj: C_COMPILER__motor_foc.2eelf_u
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\gpio.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -213,7 +213,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/main.c.obj: C_COMPILER__motor_foc.2eelf_u
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\main.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -223,7 +223,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/sin.c.obj: C_COMPILER__motor_foc.2eelf_un
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\sin.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -233,7 +233,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj: C_COMPILER__motor_foc.2eelf_un
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\spi.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -243,7 +243,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj: C_COMPILER__moto
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\stm32f1xx_hal_msp.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -253,7 +253,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj: C_COMPILER__motor_foc
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\stm32f1xx_it.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -263,7 +263,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj: C_COMPILER__motor_foc.2ee
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\syscalls.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -273,7 +273,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj: C_COMPILER__motor_foc.2eelf
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\sysmem.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -283,7 +283,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj: C_COMPILER__motor
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\system_stm32f1xx.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -293,7 +293,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj: C_COMPILER__motor_foc.2eelf_un
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\tim.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -303,7 +303,7 @@ build CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj: C_COMPILER__motor_foc.2eelf_
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Src\usart.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Src
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -313,7 +313,7 @@ build CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj: ASM_COMP
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\Startup\startup_stm32f103cbtx.s.obj.d
   FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\Startup
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -323,7 +323,7 @@ build CMakeFiles/motor_foc.elf.dir/all/start.c.obj: C_COMPILER__motor_foc.2eelf_
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\all\start.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\all
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -333,7 +333,7 @@ build CMakeFiles/motor_foc.elf.dir/user/key.c.obj: C_COMPILER__motor_foc.2eelf_u
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\user\key.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\user
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -343,7 +343,7 @@ build CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj: C_COMPILER__motor_foc.2eel
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\user\mt6816.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\user
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -353,7 +353,7 @@ build CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj: C_COMPILER__motor_foc.2
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\user\stepmotor.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\user
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\
@@ -363,7 +363,7 @@ build CMakeFiles/motor_foc.elf.dir/user/stepmotor_utils.c.obj: C_COMPILER__motor
   DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\motor_foc.elf.dir\user\stepmotor_utils.c.obj.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
-  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
+  INCLUDES = -ID:/DeskTop/foc/motor_foc/Inc -ID:/DeskTop/foc/motor_foc/user -ID:/DeskTop/foc/motor_foc/all -ID:/DeskTop/foc/motor_foc/Control -ID:/DeskTop/foc/motor_foc/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/DeskTop/foc/motor_foc/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\motor_foc.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\motor_foc.elf.dir\user
   TARGET_COMPILE_PDB = CMakeFiles\motor_foc.elf.dir\

@@ -53,6 +53,7 @@ include_directories(
         Inc
         user
         all
+        Control
         Drivers/STM32F1xx_HAL_Driver/Inc
         Drivers/CMSIS/Device/ST/STM32F1xx/Include
         Drivers/CMSIS/Include
@@ -66,6 +67,7 @@ file(GLOB_RECURSE SOURCES
         "Drivers/*.*"
         "user/*.c"         # ✅ 这一行必须有
         "all/*.c"
+        "Control/.c"
 )
 
 

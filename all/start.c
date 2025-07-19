@@ -10,9 +10,9 @@ static const uint16_t test_amp[] = {200, 700, 1000};
 
 void all(void)
 {
-	HAL_SYSTICK_Config(SystemCoreClock / 20000); // 50us tick
-	HAL_GPIO_WritePin(MT_CS_GPIO_Port, MT_CS_Pin, GPIO_PIN_SET);
 
+	HAL_GPIO_WritePin(MT_CS_GPIO_Port, MT_CS_Pin, GPIO_PIN_SET);
+	HAL_SYSTICK_Config(SystemCoreClock / 20000); // 50us tick
 	for (;;) {
 //		for (unsigned i = 0; i < sizeof(test_amp)/sizeof(test_amp[0]); ++i) {
 //			uint16_t amp = test_amp[i];
@@ -26,9 +26,8 @@ void all(void)
 
 		if (flag_1ms) {
 			flag_1ms = 0;
+			 MT6816_ReadAngleDeg_Alt();
 
-			divide = (divide + 8) & 0x03FF;
-			Motor_MicroStep(divide, 300);
 //			sprintf(send_buff,"max=%lu A=%u B=%u\r\n", dac_max, coil_a.dac_reg, coil_b.dac_reg);
 //			HAL_UART_Transmit(&huart1,(uint8_t *)send_buff, strlen(send_buff),200);
 
@@ -36,7 +35,7 @@ void all(void)
 		if (flag_10ms) {
 			flag_10ms = 0;
 			mt6816_raw = MT6816_ReadRaw_Alt();
-			mt6816_angle = MT6816_ReadAngleDeg_Alt();
+			 MT6816_ReadAngleDeg_Alt();
 			sprintf(send_buff,"raw=%d ang=%.1f\r\n", mt6816_raw, mt6816_angle);
 			HAL_UART_Transmit(&huart1,(uint8_t *)send_buff, strlen(send_buff),200);
 		}
@@ -46,16 +45,16 @@ void all(void)
 		}
 	}
 }
-void SysTick_Handler(void)
+void SysTick_Handler(void)//20KHZ
 {
-	HAL_IncTick();
 	static uint8_t cnt_1ms = 0;
 	static uint8_t cnt_10ms = 0;
 	static uint8_t cnt_100ms = 0;
-
+	MT6816_ReadAngleDeg_Alt();
 	if (++cnt_1ms >= 20) { // 20×50us = 1ms
 		cnt_1ms = 0;
 		flag_1ms = 1;
+		HAL_IncTick();
 		if (++cnt_10ms >= 10) { // 10ms
 			cnt_10ms = 0;
 			flag_10ms = 1;
