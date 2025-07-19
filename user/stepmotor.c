@@ -21,7 +21,7 @@ void Motor_Sleep(void)
 	AP_L;	AM_L;
 	BP_L;	BM_L;
 }
-void Motor_Break(void)
+void Motor_Brake(void)
 {
 	Set_PWM_A(0);	Set_PWM_B(0);
 	AP_H;	AM_H;
