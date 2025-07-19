@@ -1,0 +1,3 @@
+D:/DeskTop/foc/motor_foc/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir
+D:/DeskTop/foc/motor_foc/cmake-build-debug-mingw-stm32/CMakeFiles/edit_cache.dir
+D:/DeskTop/foc/motor_foc/cmake-build-debug-mingw-stm32/CMakeFiles/rebuild_cache.dir
