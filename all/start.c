@@ -11,12 +11,13 @@ void all(void)
 {
 	HAL_GPIO_WritePin(MT_CS_GPIO_Port, MT_CS_Pin, GPIO_PIN_SET);
 	HAL_SYSTICK_Config(SystemCoreClock / 20000); // 50us tick
-	Speed_Debug_Init(1.5,0,400);
+	Speed_Debug_Init(0.2,0.1,400);
 	for (;;) {
-
+		//Motor_Test_Rotate();
+		Motor_MicroStep(micro_idx, 300);
 		if (flag_1ms) {
 			flag_1ms = 0;
-			Motor_MicroStep(micro_idx, 400);
+
 		}
 		if (flag_10ms) {
 			flag_10ms = 0;

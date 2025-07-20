@@ -24,7 +24,7 @@ uint16_t MT6816_ReadRaw_Alt(void)
 	return (data >> 2) & 0x3FFF;
 }
 void MT6816_ReadAngleDeg_Alt(void)
-{//
+{
 	PID.Mt6816_date_now  = MT6816_ReadRaw_Alt();
 	if (PID.Mt6816_date_now == 0xFFFF) PID.angle_get_now = -1.0f;
 	PID.angle_get_now = (float)PID.Mt6816_date_now * (360.0f / 16384.0f);

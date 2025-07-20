@@ -72,6 +72,8 @@ void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 2 */
   HAL_TIM_MspPostInit(&htim2);
+	HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_3);
+	HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_4);
 
 }
 

@@ -29,7 +29,7 @@ void Motor_Brake(void)
 }
 void Motor_Test_Rotate(void)
 {   Motor_Sleep();
-	for (int step = 0; step < 2; step++) // 转动 500 步
+	for (int step = 0; step < 400; step++) // 转动 500 步
 	{
 		switch (step % 4) {
 			case 0: // A+
