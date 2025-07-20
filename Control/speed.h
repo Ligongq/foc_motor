@@ -33,4 +33,6 @@ typedef struct
 extern  control PID;
 void PID_Init(void);
 uint16_t Speed_PID_Control(void);
+
+void Speed_Debug_Init(float kp, float ki, float target_speed);
 #endif //MOTOR_FOC_SPEED_H

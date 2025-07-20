@@ -10,52 +10,39 @@ static const uint16_t test_amp[] = {200, 700, 1000};
 
 void all(void)
 {
-
 	HAL_GPIO_WritePin(MT_CS_GPIO_Port, MT_CS_Pin, GPIO_PIN_SET);
 	HAL_SYSTICK_Config(SystemCoreClock / 20000); // 50us tick
+	Speed_Debug_Init(2,0,50);
 	for (;;) {
-//		for (unsigned i = 0; i < sizeof(test_amp)/sizeof(test_amp[0]); ++i) {
-//			uint16_t amp = test_amp[i];
-//			Motor_MicroStep(0, amp);                        // 锁 A 相峰值
-//			sprintf(send_buff,"amp=%u mA  dac_max=%u duty=%u/1023 VREF≈%.2f V\r\n",amp, dac_max, dac_max, 3.3f * dac_max / 1023.0f);
-//			HAL_UART_Transmit(&huart1,(uint8_t *)send_buff, strlen(send_buff),200);
-//			HAL_Delay(30000);                                // 3 s 测量窗口
-//		}
-//		Motor_Sleep();                                     // 结束后关桥
-//		while (1);
-
 		if (flag_1ms) {
 			flag_1ms = 0;
 		//	 MT6816_ReadAngleDeg_Alt();
-
 //			sprintf(send_buff,"max=%lu A=%u B=%u\r\n", dac_max, coil_a.dac_reg, coil_b.dac_reg);
 //			HAL_UART_Transmit(&huart1,(uint8_t *)send_buff, strlen(send_buff),200);
-
 		}
 		if (flag_10ms) {
 			flag_10ms = 0;
-
-			sprintf(send_buff,"dat=%d ang=%.1f，spd=%.2f\r\n", PID.Mt6816_date_now, PID.angle_get_now,PID.now_speed);
+			sprintf(send_buff,"tar=%.1f spd=%.1f \r\n", PID.target_speed, PID.now_speed);
 			HAL_UART_Transmit(&huart1,(uint8_t *)send_buff, strlen(send_buff),200);
 		}
 		if (flag_100ms) {
 			flag_100ms = 0;
-		//	LED0_TOG;
+
+			LED0_TOG;
 		}
 	}
 }
 void SysTick_Handler(void)//20KHZ
 {
-	static uint8_t cnt_1ms = 0;
-	static uint8_t cnt_10ms = 0;
-	static uint8_t cnt_100ms = 0;
-
+	static uint8_t cnt_1ms , cnt_10ms, cnt_100ms = 0;
+	static uint32_t micro_idx = 0;
 	if (++cnt_1ms >= 20) { // 20×50us = 1ms
 		cnt_1ms = 0;
 		flag_1ms = 1;
 		HAL_IncTick();
 		MT6816_ReadAngleDeg_Alt();
-		Speed_PID_Control();
+		micro_idx = (micro_idx+Speed_PID_Control())&0x03FF;
+		Motor_MicroStep(micro_idx, 400);
 		if (++cnt_10ms >= 10) { // 10ms
 			cnt_10ms = 0;
 			flag_10ms = 1;

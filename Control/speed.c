@@ -11,7 +11,6 @@ void PID_Init(void )
 	PID.speed_kp = 0;
 	PID.now_speed = 0;
 }
-
 static float calc_speed_now(uint16_t now_cnt, uint16_t last_cnt,uint16_t dt_ms)   // 这里明确写 ms
 {
 	static int32_t diff_sum_cnt  = 0;   // 累积的 Δcount
@@ -37,7 +36,6 @@ static float calc_speed_now(uint16_t now_cnt, uint16_t last_cnt,uint16_t dt_ms) 
 	}
 	return speed_deg_s;      // **始终返回最近一次的结果**
 }
-
 uint16_t Speed_PID_Control(void)
 {
 		static uint32_t now_time,last_time=0;
@@ -49,13 +47,22 @@ uint16_t Speed_PID_Control(void)
 		PID.now_speed = calc_speed_now(PID.Mt6816_date_now,angle_date_last,time_dt);//use date improve
 		if (fabsf(PID.now_speed) < 5.0f) PID.now_speed = 0.0f;
 		angle_date_last = PID.Mt6816_date_now;
-		//---------PI
+		//---------PI-------
         speed_err = PID.target_speed - PID.now_speed;
 		speed_err_sum += (speed_err * time_dt*0.001);
 		if (speed_err_sum > SPEED_ERR_SUM_MAX) speed_err_sum = SPEED_ERR_SUM_MAX;
 		else if (speed_err_sum < SPEED_ERR_SUM_MIN) speed_err_sum = SPEED_ERR_SUM_MIN;
 		float out = PID.speed_kp * speed_err + PID.speed_ki * speed_err_sum;
         return  (uint16_t)out;
+}
+
+//////////////////////////////////////////
+void Speed_Debug_Init(float kp, float ki, float target_speed)
+{
+	PID_Init();
+	PID.speed_kp = kp;
+	PID.speed_ki = ki;
+	PID.target_speed = target_speed;
 }
 
 
