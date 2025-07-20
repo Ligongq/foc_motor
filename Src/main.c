@@ -19,6 +19,10 @@ int main(void)
 	MX_USART1_UART_Init();
 	MX_TIM2_Init();
 	MX_SPI1_Init();
+	/* Check UART DMA by sending a startup message */
+	HAL_UART_Transmit_DMA(&huart1,
+	                      (uint8_t *)dma_msg,
+	                      sizeof(dma_msg) - 1);
 	all();
 	while (1)
 	{

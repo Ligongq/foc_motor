@@ -25,12 +25,10 @@
   <component name="ChangeListManager">
     <list default="true" id="db742b0c-0e71-4130-a185-a31b439e7583" name="更改" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/all/start.c" beforeDir="false" afterPath="$PROJECT_DIR$/all/start.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/all/start.h" beforeDir="false" afterPath="$PROJECT_DIR$/all/start.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/all/start.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/all/start.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.map" afterDir="false" />
@@ -178,7 +176,7 @@
       <workItem from="1752933420138" duration="304000" />
       <workItem from="1752933737386" duration="11000" />
       <workItem from="1752978241417" duration="17011000" />
-      <workItem from="1753001192505" duration="3217000" />
+      <workItem from="1753001192505" duration="4310000" />
     </task>
     <task id="LOCAL-00001" summary="add control">
       <option name="closed" value="true" />
@@ -228,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753003305222</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix">
+      <option name="closed" value="true" />
+      <created>1753007328410</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753007328410</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

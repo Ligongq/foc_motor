@@ -11,7 +11,7 @@ void all(void)
 {
 	HAL_GPIO_WritePin(MT_CS_GPIO_Port, MT_CS_Pin, GPIO_PIN_SET);
 	HAL_SYSTICK_Config(SystemCoreClock / 20000); // 50us tick
-	Speed_Debug_Init(0.5,0,400);
+	Speed_Debug_Init(1.5,0,400);
 	for (;;) {
 
 		if (flag_1ms) {
