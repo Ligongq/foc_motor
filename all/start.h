@@ -16,6 +16,7 @@
 #include "speed.h"
 #include "debug.h"
 #include "stepmotor_utils.h"
+#include "dma.h"
 void all(void);
 extern char send_buff[70];
 #endif //MOTOR_FOC_START_H

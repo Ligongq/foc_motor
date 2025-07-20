@@ -11,7 +11,7 @@ void all(void)
 {
 	HAL_GPIO_WritePin(MT_CS_GPIO_Port, MT_CS_Pin, GPIO_PIN_SET);
 	HAL_SYSTICK_Config(SystemCoreClock / 20000); // 50us tick
-	Speed_Debug_Init(0.5,0,100);
+	Speed_Debug_Init(0.5,0,400);
 	for (;;) {
 
 		if (flag_1ms) {
@@ -24,7 +24,7 @@ void all(void)
 		}
 		if (flag_100ms) {
 			flag_100ms = 0;
-			LED0_TOG;
+
 
 		}
 	}
@@ -46,6 +46,7 @@ void SysTick_Handler(void)//20KHZ
 		if (++cnt_100ms >= 100) { // 100ms
 			cnt_100ms = 0;
 			flag_100ms = 1;
+			LED0_TOG;
 		}
 	}
 }
