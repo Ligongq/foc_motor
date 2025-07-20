@@ -17,9 +17,11 @@ int main(void)
 	MX_GPIO_Init();
 	MX_DMA_Init();
 	MX_USART1_UART_Init();
-	MX_TIM2_Init();
-	MX_SPI1_Init();
-	all();
+        MX_TIM2_Init();
+        MX_SPI1_Init();
+        /* Check UART DMA by sending a startup message */
+        uart1_printf("%s", dma_msg);
+        all();
 	while (1)
 	{
 		/* USER CODE END WHILE */
