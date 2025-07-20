@@ -14,7 +14,7 @@ void PID_Init(void )
 static float calc_speed_now(uint16_t now_cnt, uint16_t last_cnt,uint16_t dt_ms)   // 这里明确写 ms
 {
 	static int32_t diff_sum_cnt  = 0;   // 累积的 Δcount
-	static uint16_t win_ms       = 0;   // 累积的窗口时间（ms）
+	static uint32_t win_ms       = 0;   // 累积的窗口时间（ms）
 	static uint8_t  sample_cnt   = 0;   // 累积的样本数
 	static float    speed_deg_s  = 0.0f;
 	int32_t diff = (int32_t)now_cnt - (int32_t)last_cnt;
@@ -29,12 +29,14 @@ static float calc_speed_now(uint16_t now_cnt, uint16_t last_cnt,uint16_t dt_ms) 
 		float dt_s   = win_ms * 0.001f;          // ms → s
 		float deg    = diff_sum_cnt * (360.0f / 16384.0f);
 		speed_deg_s  = deg / dt_s;               // 单位：deg/s
+
 		/* 4. 复位窗口 */
 		diff_sum_cnt = 0;
 		win_ms       = 0;
 		sample_cnt   = 0;
 	}
 	return speed_deg_s;      // **始终返回最近一次的结果**
+
 }
 uint16_t Speed_PID_Control(void)
 {

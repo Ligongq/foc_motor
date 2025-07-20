@@ -14,6 +14,8 @@
 #include "stepmotor.h"
 #include "mt6816.h"
 #include "speed.h"
+#include "debug.h"
 #include "stepmotor_utils.h"
 void all(void);
+extern char send_buff[70];
 #endif //MOTOR_FOC_START_H
