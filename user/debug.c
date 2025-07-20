@@ -4,7 +4,7 @@
 
 #include "debug.h"
 /* --------- 可调参数 --------- */
-#define UART_TX_BUF_SIZE   512         /* FIFO 总字节数 (2^n 最快) */
+#define UART_TX_BUF_SIZE   128         /* FIFO 总字节数 (2^n 最快) */
 #define UART_TX_TMP_LEN     96         /* 单次 sprintf 临时缓冲 */
 #define UART_HANDLE         huart1     /* 修改这里可换串口 */
 #define UART_DMA_IRQ_PRIO    3         /* 比控制环低，比主循环高 */
@@ -14,6 +14,16 @@ static uint8_t  tx_fifo[UART_TX_BUF_SIZE];
 static uint16_t wr_idx = 0;            /* 写指针 */
 static uint16_t rd_idx = 0;            /* 读指针 */
 static volatile uint8_t dma_busy = 0;  /* 1 = DMA 正在发 */
+/* ---------- RX FIFO) ---------- */
+#define UART_RX_FIFO_SIZE   64
+
+static uint8_t  rx_fifo[UART_RX_FIFO_SIZE];
+static uint8_t  rx_w = 0, rx_r = 0;
+static uint8_t  rx_byte;             /* 单字节缓冲 */
+
+static char     line[40];            /* 单行最大 39 字节 */
+static uint8_t  line_idx = 0;
+
 void uart1_printf(const char *fmt, ...)
 {
 	char tmp[UART_TX_TMP_LEN];
@@ -44,6 +54,48 @@ void uart1_printf(const char *fmt, ...)
 		                      chunk);
 	}
 }
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	if (huart == &UART_HANDLE) {
+		/* 写 FIFO，满则覆盖最旧 */
+		rx_fifo[rx_w++] = rx_byte;
+		if (rx_w >= UART_RX_FIFO_SIZE) rx_w = 0;
+		if (rx_w == rx_r) { rx_r++; if (rx_r >= UART_RX_FIFO_SIZE) rx_r = 0; }
+
+		HAL_UART_Receive_IT(&UART_HANDLE, &rx_byte, 1);   /* 继续收 */
+	}
+}
+ void debug_poll(void)
+{
+	while (rx_r != rx_w) {
+		char c = rx_fifo[rx_r++];
+		if (rx_r >= UART_RX_FIFO_SIZE) rx_r = 0;
+
+		if (c == '\r' || c == '\n') {  // 行结束
+			if (line_idx > 0) {
+				line[line_idx] = 0;  // 封尾
+
+				/* 直接解析固定格式 */
+				if      (sscanf(line, "sp=%f", &PID.speed_kp)  == 1)
+					uart1_printf("sp=%.4f\r\n", PID.speed_kp);
+				else if (sscanf(line, "si=%f", &PID.speed_ki)  == 1)
+					uart1_printf("si=%.4f\r\n", PID.speed_ki);
+				else if (sscanf(line, "tar=%f", &PID.target_speed) == 1)
+					uart1_printf("tar=%.1f\r\n", PID.target_speed);
+				else
+					uart1_printf("err\r\n");
+
+				line_idx = 0;
+			}
+		} else if (line_idx < sizeof(line) - 1) {
+			line[line_idx++] = c;
+		} else {
+			line_idx = 0;  // 行太长，丢弃
+		}
+	}
+}
+
+
 void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if (huart == &UART_HANDLE) {

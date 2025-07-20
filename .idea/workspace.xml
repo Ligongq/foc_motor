@@ -25,18 +25,17 @@
   <component name="ChangeListManager">
     <list default="true" id="db742b0c-0e71-4130-a185-a31b439e7583" name="更改" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/tim.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/all/start.c" beforeDir="false" afterPath="$PROJECT_DIR$/all/start.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/all/start.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/all/start.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-mingw-stm32/motor_foc.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/debug.c" beforeDir="false" afterPath="$PROJECT_DIR$/user/debug.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/debug.h" beforeDir="false" afterPath="$PROJECT_DIR$/user/debug.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user/mt6816.c" beforeDir="false" afterPath="$PROJECT_DIR$/user/mt6816.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/stepmotor.c" beforeDir="false" afterPath="$PROJECT_DIR$/user/stepmotor.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +180,7 @@
       <workItem from="1752933420138" duration="304000" />
       <workItem from="1752933737386" duration="11000" />
       <workItem from="1752978241417" duration="17011000" />
-      <workItem from="1753001192505" duration="5345000" />
+      <workItem from="1753001192505" duration="9189000" />
     </task>
     <task id="LOCAL-00001" summary="add control">
       <option name="closed" value="true" />
@@ -247,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753008591157</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix">
+      <option name="closed" value="true" />
+      <created>1753009513754</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1753009513754</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

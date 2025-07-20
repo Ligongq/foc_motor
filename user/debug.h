@@ -12,6 +12,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include "start.h"
-void uart1_printf(const char *fmt, ...);
-
+void uart1_printf(const char *fmt, ...);       /* 非阻塞输出 */
+void debug_poll(void);                      /* 主循环里调，解析指令 */
 #endif //MOTOR_FOC_DEBUG_H
