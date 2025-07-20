@@ -26,7 +26,7 @@ void all(void)
 
 		if (flag_1ms) {
 			flag_1ms = 0;
-			 MT6816_ReadAngleDeg_Alt();
+		//	 MT6816_ReadAngleDeg_Alt();
 
 //			sprintf(send_buff,"max=%lu A=%u B=%u\r\n", dac_max, coil_a.dac_reg, coil_b.dac_reg);
 //			HAL_UART_Transmit(&huart1,(uint8_t *)send_buff, strlen(send_buff),200);
@@ -34,9 +34,8 @@ void all(void)
 		}
 		if (flag_10ms) {
 			flag_10ms = 0;
-			mt6816_raw = MT6816_ReadRaw_Alt();
-			 MT6816_ReadAngleDeg_Alt();
-			sprintf(send_buff,"raw=%d ang=%.1f\r\n", mt6816_raw, mt6816_angle);
+
+			sprintf(send_buff,"dat=%d ang=%.1f，spd=%.2f\r\n", PID.Mt6816_date_now, PID.angle_get_now,PID.now_speed);
 			HAL_UART_Transmit(&huart1,(uint8_t *)send_buff, strlen(send_buff),200);
 		}
 		if (flag_100ms) {
@@ -50,15 +49,16 @@ void SysTick_Handler(void)//20KHZ
 	static uint8_t cnt_1ms = 0;
 	static uint8_t cnt_10ms = 0;
 	static uint8_t cnt_100ms = 0;
-	MT6816_ReadAngleDeg_Alt();
+
 	if (++cnt_1ms >= 20) { // 20×50us = 1ms
 		cnt_1ms = 0;
 		flag_1ms = 1;
 		HAL_IncTick();
+		MT6816_ReadAngleDeg_Alt();
+		Speed_PID_Control();
 		if (++cnt_10ms >= 10) { // 10ms
 			cnt_10ms = 0;
 			flag_10ms = 1;
-
 		}
 		if (++cnt_100ms >= 100) { // 100ms
 			cnt_100ms = 0;
