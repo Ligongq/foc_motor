@@ -130,7 +130,7 @@ CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/motor_foc
 CMAKE_LINKER:FILEPATH=C:/Program Files/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-ld.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files/JetBrains/CLion 2024.3.1/bin/ninja/win/x64/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/JetBrains/CLion 2024.3.1/bin/ninja/win/x64/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.

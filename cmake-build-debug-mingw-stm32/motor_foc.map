@@ -1,13 +1,17 @@
 Archive member included to satisfy reference by file (symbol)
 
 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_mulsf3.o)
-                              CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj (__aeabi_fmul)
+                              CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj (__aeabi_fmul)
 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
                               CMakeFiles/motor_foc.elf.dir/all/start.c.obj (__aeabi_f2d)
 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
-                              CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj (__aeabi_ui2f)
+                              CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj (__aeabi_fsub)
 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
-                              CMakeFiles/motor_foc.elf.dir/user/stepmotor_utils.c.obj (__aeabi_fdiv)
+                              CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj (__aeabi_fdiv)
+C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
+                              CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj (__aeabi_fcmplt)
+C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
+                              CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj (__aeabi_f2uiz)
 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-exit.o)
                               C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crt0.o (exit)
 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
@@ -184,6 +188,25 @@ Discarded input sections
                 0x00000000       0xd2 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crt0.o
  .ARM.attributes
                 0x00000000       0x1b C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crt0.o
+ .text          0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .data          0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .text.calc_speed_now
+                0x00000000       0x34 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .text.PID_Init
+                0x00000000       0x14 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .text.Speed_PID_Control
+                0x00000000       0xd0 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .bss.speed_err_sum.0
+                0x00000000        0x4 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .bss.speed_err.1
+                0x00000000        0x4 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .bss.angle_last.2
+                0x00000000        0x4 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .bss.last_time.3
+                0x00000000        0x4 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .bss.now_time.4
+                0x00000000        0x4 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
  .text          0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .data          0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .bss           0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
@@ -1220,6 +1243,22 @@ Discarded input sections
  .bss           0x00000000        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
  .data          0x00000000        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
  .bss           0x00000000        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
+ .text          0x00000000       0xec C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
+ .data          0x00000000        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
+ .bss           0x00000000        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
+ .debug_line_str
+                0x00000000       0xca C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
+ .debug_frame   0x00000000       0xc8 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
+ .ARM.attributes
+                0x00000000       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpsf2.o)
+ .text          0x00000000       0x40 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
+ .data          0x00000000        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
+ .bss           0x00000000        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
+ .debug_line_str
+                0x00000000       0xca C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
+ .debug_frame   0x00000000       0x24 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
+ .ARM.attributes
+                0x00000000       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixunssfsi.o)
  .text          0x00000000        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-exit.o)
  .data          0x00000000        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-exit.o)
  .bss           0x00000000        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-exit.o)
@@ -1700,6 +1739,7 @@ Linker script and memory map
 LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crti.o
 LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
 LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crt0.o
+LOAD CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
 LOAD CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
 LOAD CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
 LOAD CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
@@ -2530,7 +2570,7 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
  .igot.plt      0x200006e4        0x0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x200006e4                        . = ALIGN (0x4)
 
-.bss            0x200006e4      0x478 load address 0x08009fb4
+.bss            0x200006e4      0x490 load address 0x08009fb4
                 0x200006e4                        _sbss = .
                 0x200006e4                        __bss_start__ = _sbss
  *(.bss)
@@ -2539,94 +2579,96 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
                 0x200006e4        0x1 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  *fill*         0x200006e5        0x3 
  .bss.object.0  0x200006e8       0x18 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
- .bss.uwTick    0x20000700        0x4 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                0x20000700                uwTick
- .bss.hspi1     0x20000704       0x58 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
-                0x20000704                hspi1
+ .bss.PID       0x20000700       0x18 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+                0x20000700                PID
+ .bss.uwTick    0x20000718        0x4 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x20000718                uwTick
+ .bss.hspi1     0x2000071c       0x58 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+                0x2000071c                hspi1
  .bss.__sbrk_heap_end
-                0x2000075c        0x4 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
- .bss.htim2     0x20000760       0x48 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
-                0x20000760                htim2
- .bss.huart1    0x200007a8       0x48 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
-                0x200007a8                huart1
+                0x20000774        0x4 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+ .bss.htim2     0x20000778       0x48 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+                0x20000778                htim2
+ .bss.huart1    0x200007c0       0x48 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+                0x200007c0                huart1
  .bss.cnt_100ms.0
-                0x200007f0        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x20000808        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .bss.cnt_10ms.1
-                0x200007f1        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x20000809        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .bss.cnt_1ms.2
-                0x200007f2        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x2000080a        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .bss.flag_100ms
-                0x200007f3        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
-                0x200007f3                flag_100ms
+                0x2000080b        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x2000080b                flag_100ms
  .bss.flag_10ms
-                0x200007f4        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
-                0x200007f4                flag_10ms
- .bss.flag_1ms  0x200007f5        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
-                0x200007f5                flag_1ms
- *fill*         0x200007f6        0x2 
+                0x2000080c        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x2000080c                flag_10ms
+ .bss.flag_1ms  0x2000080d        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x2000080d                flag_1ms
+ *fill*         0x2000080e        0x2 
  .bss.send_buff
-                0x200007f8       0x46 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
-                0x200007f8                send_buff
- *fill*         0x2000083e        0x2 
+                0x20000810       0x46 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x20000810                send_buff
+ *fill*         0x20000856        0x2 
  .bss.mt6816_angle
-                0x20000840        0x4 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
-                0x20000840                mt6816_angle
+                0x20000858        0x4 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+                0x20000858                mt6816_angle
  .bss.mt6816_raw
-                0x20000844        0x2 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
-                0x20000844                mt6816_raw
- *fill*         0x20000846        0x2 
- .bss.__sf      0x20000848      0x138 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
-                0x20000848                __sf
+                0x2000085c        0x2 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+                0x2000085c                mt6816_raw
+ *fill*         0x2000085e        0x2 
+ .bss.__sf      0x20000860      0x138 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
+                0x20000860                __sf
  .bss.__stdio_exit_handler
-                0x20000980        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
-                0x20000980                __stdio_exit_handler
- .bss.errno     0x20000984        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-reent.o)
-                0x20000984                errno
+                0x20000998        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
+                0x20000998                __stdio_exit_handler
+ .bss.errno     0x2000099c        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-reent.o)
+                0x2000099c                errno
  .bss.__lock___malloc_recursive_mutex
-                0x20000988        0x1 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
-                0x20000988                __lock___malloc_recursive_mutex
- *fill*         0x20000989        0x3 
+                0x200009a0        0x1 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x200009a0                __lock___malloc_recursive_mutex
+ *fill*         0x200009a1        0x3 
  .bss.__lock___atexit_recursive_mutex
-                0x2000098c        0x1 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
-                0x2000098c                __lock___atexit_recursive_mutex
- *fill*         0x2000098d        0x3 
+                0x200009a4        0x1 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x200009a4                __lock___atexit_recursive_mutex
+ *fill*         0x200009a5        0x3 
  .bss.__lock___sfp_recursive_mutex
-                0x20000990        0x1 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
-                0x20000990                __lock___sfp_recursive_mutex
- *fill*         0x20000991        0x3 
- .bss.__atexit  0x20000994        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
-                0x20000994                __atexit
+                0x200009a8        0x1 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x200009a8                __lock___sfp_recursive_mutex
+ *fill*         0x200009a9        0x3 
+ .bss.__atexit  0x200009ac        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x200009ac                __atexit
  .bss.__malloc_current_mallinfo
-                0x20000998       0x28 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
-                0x20000998                __malloc_current_mallinfo
+                0x200009b0       0x28 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
+                0x200009b0                __malloc_current_mallinfo
  .bss.__malloc_max_total_mem
-                0x200009c0        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
-                0x200009c0                __malloc_max_total_mem
+                0x200009d8        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
+                0x200009d8                __malloc_max_total_mem
  .bss.__malloc_max_sbrked_mem
-                0x200009c4        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
-                0x200009c4                __malloc_max_sbrked_mem
+                0x200009dc        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
+                0x200009dc                __malloc_max_sbrked_mem
  .bss.__malloc_top_pad
-                0x200009c8        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
-                0x200009c8                __malloc_top_pad
+                0x200009e0        0x4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
+                0x200009e0                __malloc_top_pad
  .bss.__atexit0
-                0x200009cc      0x190 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
-                0x200009cc                __atexit0
+                0x200009e4      0x190 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+                0x200009e4                __atexit0
  *(COMMON)
-                0x20000b5c                        . = ALIGN (0x4)
-                0x20000b5c                        _ebss = .
-                0x20000b5c                        __bss_end__ = _ebss
+                0x20000b74                        . = ALIGN (0x4)
+                0x20000b74                        _ebss = .
+                0x20000b74                        __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000b5c      0x604 load address 0x08009fb4
-                0x20000b60                        . = ALIGN (0x8)
- *fill*         0x20000b5c        0x4 
+                0x20000b74      0x604 load address 0x08009fb4
+                0x20000b78                        . = ALIGN (0x8)
+ *fill*         0x20000b74        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x20000b60                        PROVIDE (_end = .)
-                0x20000d60                        . = (. + _Min_Heap_Size)
- *fill*         0x20000b60      0x200 
-                0x20001160                        . = (. + _Min_Stack_Size)
- *fill*         0x20000d60      0x400 
-                0x20001160                        . = ALIGN (0x8)
+                0x20000b78                        PROVIDE (_end = .)
+                0x20000d78                        . = (. + _Min_Heap_Size)
+ *fill*         0x20000b78      0x200 
+                0x20001178                        . = (. + _Min_Stack_Size)
+ *fill*         0x20000d78      0x400 
+                0x20001178                        . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -2641,419 +2683,432 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
  .ARM.attributes
                 0x0000001d       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtbegin.o
  .ARM.attributes
-                0x0000004a       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x0000004a       0x2d CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
  .ARM.attributes
-                0x00000077       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x00000077       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .ARM.attributes
-                0x000000a4       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x000000a4       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .ARM.attributes
-                0x000000d1       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x000000d1       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .ARM.attributes
-                0x000000fe       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x000000fe       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .ARM.attributes
-                0x0000012b       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x0000012b       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .ARM.attributes
-                0x00000158       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x00000158       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .ARM.attributes
-                0x00000185       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x00000185       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .ARM.attributes
-                0x000001b2       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x000001b2       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .ARM.attributes
-                0x000001df       0x2d CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
+                0x000001df       0x2d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .ARM.attributes
-                0x0000020c       0x2d CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
+                0x0000020c       0x2d CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
  .ARM.attributes
-                0x00000239       0x2d CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+                0x00000239       0x2d CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
  .ARM.attributes
-                0x00000266       0x2d CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+                0x00000266       0x2d CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
  .ARM.attributes
-                0x00000293       0x2d CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
+                0x00000293       0x2d CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .ARM.attributes
-                0x000002c0       0x2d CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
+                0x000002c0       0x2d CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
  .ARM.attributes
-                0x000002ed       0x2d CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+                0x000002ed       0x2d CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
  .ARM.attributes
-                0x0000031a       0x2d CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
+                0x0000031a       0x2d CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
  .ARM.attributes
-                0x00000347       0x2d CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+                0x00000347       0x2d CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
  .ARM.attributes
-                0x00000374       0x2d CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+                0x00000374       0x2d CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
  .ARM.attributes
-                0x000003a1       0x21 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
+                0x000003a1       0x2d CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
  .ARM.attributes
-                0x000003c2       0x2d CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x000003ce       0x21 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
  .ARM.attributes
-                0x000003ef       0x2d CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+                0x000003ef       0x2d CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .ARM.attributes
-                0x0000041c       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+                0x0000041c       0x2d CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
  .ARM.attributes
-                0x00000439       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+                0x00000449       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x00000456       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
+                0x00000466       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
  .ARM.attributes
-                0x00000473       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
+                0x00000483       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
  .ARM.attributes
-                0x000004a0       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fwalk.o)
+                0x000004a0       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
  .ARM.attributes
-                0x000004cd       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sprintf.o)
+                0x000004cd       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fwalk.o)
  .ARM.attributes
-                0x000004fa       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-stdio.o)
+                0x000004fa       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sprintf.o)
  .ARM.attributes
-                0x00000527       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
+                0x00000527       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-stdio.o)
  .ARM.attributes
-                0x00000554       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-closer.o)
+                0x00000554       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
  .ARM.attributes
-                0x00000581       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-reent.o)
+                0x00000581       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-closer.o)
  .ARM.attributes
-                0x000005ae       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-impure.o)
+                0x000005ae       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-reent.o)
  .ARM.attributes
-                0x000005db       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lseekr.o)
+                0x000005db       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-impure.o)
  .ARM.attributes
-                0x00000608       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-readr.o)
+                0x00000608       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lseekr.o)
  .ARM.attributes
-                0x00000635       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-writer.o)
+                0x00000635       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-readr.o)
  .ARM.attributes
-                0x00000662       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-errno.o)
+                0x00000662       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-writer.o)
  .ARM.attributes
-                0x0000068f       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
+                0x0000068f       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-errno.o)
  .ARM.attributes
-                0x000006bc       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+                0x000006bc       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
  .ARM.attributes
-                0x000006e9       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
+                0x000006e9       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
  .ARM.attributes
-                0x00000716       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+                0x00000716       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
  .ARM.attributes
-                0x00000743       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
+                0x00000743       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
  .ARM.attributes
-                0x00000770       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-freer.o)
+                0x00000770       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
  .ARM.attributes
-                0x0000079d       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
+                0x0000079d       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-freer.o)
  .ARM.attributes
-                0x000007ca       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mlock.o)
+                0x000007ca       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
  .ARM.attributes
-                0x000007f7       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-svfprintf.o)
+                0x000007f7       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mlock.o)
  .ARM.attributes
-                0x00000824       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sprint_r.o)
+                0x00000824       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-svfprintf.o)
  .ARM.attributes
-                0x00000851       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ssprint_r.o)
+                0x00000851       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sprint_r.o)
  .ARM.attributes
-                0x0000087e       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fclose.o)
+                0x0000087e       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ssprint_r.o)
  .ARM.attributes
-                0x000008ab       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fflush.o)
+                0x000008ab       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fclose.o)
  .ARM.attributes
-                0x000008d8       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fvwrite.o)
+                0x000008d8       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fflush.o)
  .ARM.attributes
-                0x00000905       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wsetup.o)
+                0x00000905       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fvwrite.o)
  .ARM.attributes
-                0x00000932       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memmove.o)
+                0x00000932       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wsetup.o)
  .ARM.attributes
-                0x0000095f       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
+                0x0000095f       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memmove.o)
  .ARM.attributes
-                0x0000098c       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-locale.o)
+                0x0000098c       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
  .ARM.attributes
-                0x000009b9       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-localeconv.o)
+                0x000009b9       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-locale.o)
  .ARM.attributes
-                0x000009e6       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sbrkr.o)
+                0x000009e6       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-localeconv.o)
  .ARM.attributes
-                0x00000a13       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
+                0x00000a13       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sbrkr.o)
  .ARM.attributes
-                0x00000a40       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sysconf.o)
+                0x00000a40       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
  .ARM.attributes
-                0x00000a6d       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memchr-stub.o)
+                0x00000a6d       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sysconf.o)
  .ARM.attributes
-                0x00000a9a       0x1b C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
+                0x00000a9a       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memchr-stub.o)
  .ARM.attributes
-                0x00000ab5       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libm_a-s_frexp.o)
+                0x00000ac7       0x1b C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memcpy.o)
  .ARM.attributes
-                0x00000ae2       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+                0x00000ae2       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libm_a-s_frexp.o)
  .ARM.attributes
-                0x00000b0f       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-dtoa.o)
+                0x00000b0f       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
  .ARM.attributes
-                0x00000b3c       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mbtowc_r.o)
+                0x00000b3c       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-dtoa.o)
  .ARM.attributes
-                0x00000b69       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mprec.o)
+                0x00000b69       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mbtowc_r.o)
  .ARM.attributes
-                0x00000b96       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-reallocr.o)
+                0x00000b96       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mprec.o)
  .ARM.attributes
-                0x00000bc3       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wctomb_r.o)
+                0x00000bc3       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-reallocr.o)
  .ARM.attributes
-                0x00000bf0       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcrtomb.o)
+                0x00000bf0       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wctomb_r.o)
  .ARM.attributes
-                0x00000c1d       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcsrtombs.o)
+                0x00000c1d       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcrtomb.o)
  .ARM.attributes
-                0x00000c4a       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ctype_.o)
+                0x00000c4a       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcsrtombs.o)
  .ARM.attributes
-                0x00000c77       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ssputs_r.o)
+                0x00000c77       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ctype_.o)
  .ARM.attributes
-                0x00000ca4       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-makebuf.o)
+                0x00000ca4       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ssputs_r.o)
  .ARM.attributes
-                0x00000cd1       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fstatr.o)
+                0x00000cd1       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-makebuf.o)
  .ARM.attributes
-                0x00000cfe       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-isattyr.o)
+                0x00000cfe       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fstatr.o)
  .ARM.attributes
-                0x00000d2b       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-assert.o)
+                0x00000d2b       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-isattyr.o)
  .ARM.attributes
-                0x00000d58       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-callocr.o)
+                0x00000d58       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-assert.o)
  .ARM.attributes
-                0x00000d85       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcsnrtombs.o)
+                0x00000d85       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-callocr.o)
  .ARM.attributes
-                0x00000db2       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fiprintf.o)
+                0x00000db2       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcsnrtombs.o)
  .ARM.attributes
-                0x00000ddf       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-vfiprintf.o)
+                0x00000ddf       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fiprintf.o)
  .ARM.attributes
-                0x00000e0c       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-abort.o)
+                0x00000e0c       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-vfiprintf.o)
  .ARM.attributes
-                0x00000e39       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-signal.o)
+                0x00000e39       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-abort.o)
  .ARM.attributes
-                0x00000e66       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-signalr.o)
+                0x00000e66       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-signal.o)
  .ARM.attributes
-                0x00000e93       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+                0x00000e93       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-signalr.o)
  .ARM.attributes
-                0x00000eb0       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
+                0x00000ec0       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
  .ARM.attributes
-                0x00000ecd       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
+                0x00000edd       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
  .ARM.attributes
-                0x00000eea       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
+                0x00000efa       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
  .ARM.attributes
-                0x00000f07       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtend.o
+                0x00000f17       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
  .ARM.attributes
-                0x00000f34       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
+                0x00000f34       0x2d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtend.o
+ .ARM.attributes
+                0x00000f61       0x1d C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp/crtn.o
 OUTPUT(motor_foc.elf elf32-littlearm)
 LOAD linker stubs
 LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libc.a
 LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libm.a
 LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x12d99
- .debug_info    0x00000000      0x7a2 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_info    0x000007a2      0xcd9 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_info    0x0000147b      0x7f2 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_info    0x00001c6d      0x604 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_info    0x00002271      0x9c7 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_info    0x00002c38     0x1ba8 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_info    0x000047e0     0x3c0f CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_info    0x000083ef     0x1aac CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_info    0x00009e9b     0x3f85 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_info    0x0000de20      0x37a CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
- .debug_info    0x0000e19a      0x366 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
- .debug_info    0x0000e500      0x8cd CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
- .debug_info    0x0000edcd      0x1f4 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x0000efc1      0x975 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_info    0x0000f936      0x789 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
- .debug_info    0x000100bf      0x171 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
- .debug_info    0x00010230      0x22d CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_info    0x0001045d      0xd18 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
- .debug_info    0x00011175      0xa80 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
- .debug_info    0x00011bf5       0x30 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
- .debug_info    0x00011c25      0x8a6 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .debug_info    0x000124cb      0x8ce CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+.debug_info     0x00000000    0x130fd
+ .debug_info    0x00000000      0x364 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .debug_info    0x00000364      0x7a2 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_info    0x00000b06      0xcd9 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_info    0x000017df      0x7f2 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_info    0x00001fd1      0x604 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_info    0x000025d5      0x9c7 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_info    0x00002f9c     0x1ba8 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_info    0x00004b44     0x3c0f CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_info    0x00008753     0x1aac CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_info    0x0000a1ff     0x3f85 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_info    0x0000e184      0x37a CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
+ .debug_info    0x0000e4fe      0x366 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
+ .debug_info    0x0000e864      0x8cd CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+ .debug_info    0x0000f131      0x1f4 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x0000f325      0x975 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_info    0x0000fc9a      0x789 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
+ .debug_info    0x00010423      0x171 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+ .debug_info    0x00010594      0x22d CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_info    0x000107c1      0xd18 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+ .debug_info    0x000114d9      0xa80 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+ .debug_info    0x00011f59       0x30 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
+ .debug_info    0x00011f89      0x8a6 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_info    0x0001282f      0x8ce CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
 
-.debug_abbrev   0x00000000     0x2bd7
- .debug_abbrev  0x00000000      0x22d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_abbrev  0x0000022d      0x36d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_abbrev  0x0000059a      0x244 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_abbrev  0x000007de      0x1f7 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_abbrev  0x000009d5      0x2a0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_abbrev  0x00000c75      0x272 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_abbrev  0x00000ee7      0x270 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_abbrev  0x00001157      0x26e CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_abbrev  0x000013c5      0x31c CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_abbrev  0x000016e1      0x151 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
- .debug_abbrev  0x00001832      0x19f CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
- .debug_abbrev  0x000019d1      0x22a CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
- .debug_abbrev  0x00001bfb       0xed CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_abbrev  0x00001ce8      0x1a3 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x00001e8b      0x1c1 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
- .debug_abbrev  0x0000204c       0xea CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
- .debug_abbrev  0x00002136      0x143 CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_abbrev  0x00002279      0x271 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
- .debug_abbrev  0x000024ea      0x248 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
- .debug_abbrev  0x00002732       0x24 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
- .debug_abbrev  0x00002756      0x24c CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .debug_abbrev  0x000029a2      0x235 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+.debug_abbrev   0x00000000     0x2d49
+ .debug_abbrev  0x00000000      0x172 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .debug_abbrev  0x00000172      0x22d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_abbrev  0x0000039f      0x36d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_abbrev  0x0000070c      0x244 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_abbrev  0x00000950      0x1f7 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_abbrev  0x00000b47      0x2a0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_abbrev  0x00000de7      0x272 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_abbrev  0x00001059      0x270 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_abbrev  0x000012c9      0x26e CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_abbrev  0x00001537      0x31c CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_abbrev  0x00001853      0x151 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
+ .debug_abbrev  0x000019a4      0x19f CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
+ .debug_abbrev  0x00001b43      0x22a CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+ .debug_abbrev  0x00001d6d       0xed CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_abbrev  0x00001e5a      0x1a3 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_abbrev  0x00001ffd      0x1c1 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
+ .debug_abbrev  0x000021be       0xea CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+ .debug_abbrev  0x000022a8      0x143 CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x000023eb      0x271 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+ .debug_abbrev  0x0000265c      0x248 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+ .debug_abbrev  0x000028a4       0x24 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
+ .debug_abbrev  0x000028c8      0x24c CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_abbrev  0x00002b14      0x235 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
 
 .debug_loclists
-                0x00000000     0xa582
+                0x00000000     0xa628
  .debug_loclists
-                0x00000000       0xe1 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x00000000       0xa6 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
  .debug_loclists
-                0x000000e1      0x530 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x000000a6       0xe1 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_loclists
-                0x00000611      0x562 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x00000187      0x530 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_loclists
-                0x00000b73      0x318 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x000006b7      0x562 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_loclists
-                0x00000e8b      0x435 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x00000c19      0x318 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_loclists
-                0x000012c0     0x14ba CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x00000f31      0x435 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_loclists
-                0x0000277a     0x37db CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x00001366     0x14ba CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_loclists
-                0x00005f55     0x1398 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x00002820     0x37db CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_loclists
-                0x000072ed     0x2c86 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x00005ffb     0x1398 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_loclists
-                0x00009f73       0x96 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+                0x00007393     0x2c86 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_loclists
-                0x0000a009       0x17 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+                0x0000a019       0x96 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
  .debug_loclists
-                0x0000a020      0x2cd CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
+                0x0000a0af       0x17 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .debug_loclists
-                0x0000a2ed       0x52 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+                0x0000a0c6      0x2cd CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
  .debug_loclists
-                0x0000a33f       0xb7 CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
+                0x0000a393       0x52 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
  .debug_loclists
-                0x0000a3f6       0xb2 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+                0x0000a3e5       0xb7 CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
  .debug_loclists
-                0x0000a4a8       0x96 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+                0x0000a49c       0xb2 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
  .debug_loclists
-                0x0000a53e       0x44 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+                0x0000a54e       0x96 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+ .debug_loclists
+                0x0000a5e4       0x44 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
 
-.debug_aranges  0x00000000      0xef8
+.debug_aranges  0x00000000      0xf28
  .debug_aranges
-                0x00000000       0xe0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x00000000       0x30 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
  .debug_aranges
-                0x000000e0       0xc0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x00000030       0xe0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_aranges
-                0x000001a0       0x80 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x00000110       0xc0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_aranges
-                0x00000220       0x58 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x000001d0       0x80 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_aranges
-                0x00000278       0x90 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x00000250       0x58 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_aranges
-                0x00000308      0x1d0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x000002a8       0x90 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_aranges
-                0x000004d8      0x3d0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x00000338      0x1d0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_aranges
-                0x000008a8      0x168 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x00000508      0x3d0 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_aranges
-                0x00000a10      0x208 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x000008d8      0x168 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_aranges
-                0x00000c18       0x20 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
+                0x00000a40      0x208 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_aranges
-                0x00000c38       0x30 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
+                0x00000c48       0x20 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
  .debug_aranges
-                0x00000c68       0x30 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+                0x00000c68       0x30 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
  .debug_aranges
-                0x00000c98       0x20 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+                0x00000c98       0x30 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
  .debug_aranges
-                0x00000cb8       0x70 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
+                0x00000cc8       0x20 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .debug_aranges
-                0x00000d28       0xa8 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
+                0x00000ce8       0x70 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
  .debug_aranges
-                0x00000dd0       0x20 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+                0x00000d58       0xa8 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
  .debug_aranges
-                0x00000df0       0x28 CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
+                0x00000e00       0x20 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
  .debug_aranges
-                0x00000e18       0x38 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+                0x00000e20       0x28 CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
  .debug_aranges
-                0x00000e50       0x30 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+                0x00000e48       0x38 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
  .debug_aranges
-                0x00000e80       0x28 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
+                0x00000e80       0x30 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
  .debug_aranges
-                0x00000ea8       0x28 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x00000eb0       0x28 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
  .debug_aranges
-                0x00000ed0       0x28 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+                0x00000ed8       0x28 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_aranges
+                0x00000f00       0x28 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
 
 .debug_rnglists
-                0x00000000      0xb58
+                0x00000000      0xb78
  .debug_rnglists
-                0x00000000       0xa3 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+                0x00000000       0x20 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
  .debug_rnglists
-                0x000000a3       0x8b CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+                0x00000020       0xa3 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_rnglists
-                0x0000012e       0x5e CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+                0x000000c3       0x8b CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_rnglists
-                0x0000018c       0x3f CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+                0x0000014e       0x5e CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .debug_rnglists
-                0x000001cb       0x7d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+                0x000001ac       0x3f CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
  .debug_rnglists
-                0x00000248      0x168 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+                0x000001eb       0x7d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
  .debug_rnglists
-                0x000003b0      0x2ff CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+                0x00000268      0x168 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
  .debug_rnglists
-                0x000006af      0x11a CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+                0x000003d0      0x2ff CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
  .debug_rnglists
-                0x000007c9      0x1a1 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+                0x000006cf      0x11a CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
  .debug_rnglists
-                0x0000096a       0x14 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
+                0x000007e9      0x1a1 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_rnglists
-                0x0000097e       0x1f CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
+                0x0000098a       0x14 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
  .debug_rnglists
-                0x0000099d       0x20 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+                0x0000099e       0x1f CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
  .debug_rnglists
-                0x000009bd       0x13 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+                0x000009bd       0x20 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
  .debug_rnglists
-                0x000009d0       0x4f CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
+                0x000009dd       0x13 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
  .debug_rnglists
-                0x00000a1f       0x79 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
+                0x000009f0       0x4f CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
  .debug_rnglists
-                0x00000a98       0x13 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+                0x00000a3f       0x79 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
  .debug_rnglists
-                0x00000aab       0x1a CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
+                0x00000ab8       0x13 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
  .debug_rnglists
-                0x00000ac5       0x26 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+                0x00000acb       0x1a CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
  .debug_rnglists
-                0x00000aeb       0x20 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+                0x00000ae5       0x26 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
  .debug_rnglists
-                0x00000b0b       0x19 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
+                0x00000b0b       0x20 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
  .debug_rnglists
-                0x00000b24       0x1a CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x00000b2b       0x19 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
  .debug_rnglists
-                0x00000b3e       0x1a CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+                0x00000b44       0x1a CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_rnglists
+                0x00000b5e       0x1a CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
 
-.debug_line     0x00000000    0x11727
- .debug_line    0x00000000      0x620 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_line    0x00000620      0x780 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_line    0x00000da0      0xbc8 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_line    0x00001968      0x6a9 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_line    0x00002011      0xd88 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_line    0x00002d99     0x24d4 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_line    0x0000526d     0x46c8 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_line    0x00009935     0x1ac5 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_line    0x0000b3fa     0x3591 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_line    0x0000e98b      0x307 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
- .debug_line    0x0000ec92      0x3e6 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
- .debug_line    0x0000f078      0x407 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
- .debug_line    0x0000f47f      0x237 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x0000f6b6      0x3b6 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_line    0x0000fa6c      0x49a CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
- .debug_line    0x0000ff06      0x2d9 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
- .debug_line    0x000101df      0x300 CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_line    0x000104df      0x492 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
- .debug_line    0x00010971      0x407 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
- .debug_line    0x00010d78       0x78 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
- .debug_line    0x00010df0      0x586 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .debug_line    0x00011376      0x3b1 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+.debug_line     0x00000000    0x11a7b
+ .debug_line    0x00000000      0x354 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .debug_line    0x00000354      0x620 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_line    0x00000974      0x780 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_line    0x000010f4      0xbc8 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_line    0x00001cbc      0x6a9 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_line    0x00002365      0xd88 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_line    0x000030ed     0x24d4 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_line    0x000055c1     0x46c8 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_line    0x00009c89     0x1ac5 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_line    0x0000b74e     0x3591 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_line    0x0000ecdf      0x307 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
+ .debug_line    0x0000efe6      0x3e6 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
+ .debug_line    0x0000f3cc      0x407 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+ .debug_line    0x0000f7d3      0x237 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x0000fa0a      0x3b6 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_line    0x0000fdc0      0x49a CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
+ .debug_line    0x0001025a      0x2d9 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+ .debug_line    0x00010533      0x300 CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_line    0x00010833      0x492 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+ .debug_line    0x00010cc5      0x407 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+ .debug_line    0x000110cc       0x78 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
+ .debug_line    0x00011144      0x586 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_line    0x000116ca      0x3b1 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
 
-.debug_str      0x00000000     0x430e
- .debug_str     0x00000000     0x430e CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
-                                0x85a (size before relaxing)
- .debug_str     0x0000430e      0x8ff CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_str     0x0000430e      0x629 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_str     0x0000430e      0x42c CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_str     0x0000430e      0x657 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_str     0x0000430e      0xb8d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_str     0x0000430e     0x16b1 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_str     0x0000430e      0xebd CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_str     0x0000430e      0xd20 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_str     0x0000430e      0x2b2 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
- .debug_str     0x0000430e      0x3c9 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
- .debug_str     0x0000430e      0x6f2 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
- .debug_str     0x0000430e      0x246 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_str     0x0000430e      0x98a CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_str     0x0000430e      0x413 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
- .debug_str     0x0000430e      0x23f CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
- .debug_str     0x0000430e      0x27b CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_str     0x0000430e      0xc21 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
- .debug_str     0x0000430e      0xa42 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
- .debug_str     0x0000430e       0x8c CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
- .debug_str     0x0000430e      0x766 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .debug_str     0x0000430e      0x70b CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+.debug_str      0x00000000     0x4408
+ .debug_str     0x00000000     0x4408 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+                                0x32f (size before relaxing)
+ .debug_str     0x00004408      0x85a CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_str     0x00004408      0x8ff CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_str     0x00004408      0x629 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_str     0x00004408      0x42c CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_str     0x00004408      0x657 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_str     0x00004408      0xb8d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_str     0x00004408     0x16b1 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_str     0x00004408      0xebd CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_str     0x00004408      0xd20 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_str     0x00004408      0x2b2 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
+ .debug_str     0x00004408      0x3c9 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
+ .debug_str     0x00004408      0x6f2 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+ .debug_str     0x00004408      0x246 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x00004408      0x98a CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_str     0x00004408      0x413 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
+ .debug_str     0x00004408      0x23f CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+ .debug_str     0x00004408      0x27b CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_str     0x00004408      0xc21 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+ .debug_str     0x00004408      0xa42 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+ .debug_str     0x00004408       0x8c CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
+ .debug_str     0x00004408      0x766 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_str     0x00004408      0x70b CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
 
 .comment        0x00000000       0x45
- .comment       0x00000000       0x45 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .comment       0x00000000       0x45 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
                                  0x46 (size before relaxing)
+ .comment       0x00000045       0x46 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .comment       0x00000045       0x46 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .comment       0x00000045       0x46 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
  .comment       0x00000045       0x46 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
@@ -3075,91 +3130,92 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
  .comment       0x00000045       0x46 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .comment       0x00000045       0x46 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
 
-.debug_frame    0x00000000     0x3e88
- .debug_frame   0x00000000      0x1cc CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_frame   0x000001cc      0x19c CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_frame   0x00000368      0x144 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_frame   0x000004ac       0xe4 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_frame   0x00000590      0x184 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_frame   0x00000714      0x5c8 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_frame   0x00000cdc      0xb18 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_frame   0x000017f4      0x418 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_frame   0x00001c0c      0x5dc CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_frame   0x000021e8       0x38 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
- .debug_frame   0x00002220       0x58 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
- .debug_frame   0x00002278       0x60 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
- .debug_frame   0x000022d8       0x28 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_frame   0x00002300       0xd8 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_frame   0x000023d8      0x190 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
- .debug_frame   0x00002568       0x28 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
- .debug_frame   0x00002590       0x30 CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_frame   0x000025c0       0x84 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
- .debug_frame   0x00002644       0x64 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
- .debug_frame   0x000026a8       0x40 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .debug_frame   0x000026e8       0x4c CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
- .debug_frame   0x00002734       0xac C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
- .debug_frame   0x000027e0       0x4c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
- .debug_frame   0x0000282c       0x38 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
- .debug_frame   0x00002864      0x13c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
- .debug_frame   0x000029a0       0x34 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fwalk.o)
- .debug_frame   0x000029d4       0x80 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sprintf.o)
- .debug_frame   0x00002a54       0x8c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-stdio.o)
- .debug_frame   0x00002ae0       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
- .debug_frame   0x00002b0c       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-closer.o)
- .debug_frame   0x00002b38       0x3c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-reent.o)
- .debug_frame   0x00002b74       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lseekr.o)
- .debug_frame   0x00002ba0       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-readr.o)
- .debug_frame   0x00002bcc       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-writer.o)
- .debug_frame   0x00002bf8       0x20 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-errno.o)
- .debug_frame   0x00002c18       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
- .debug_frame   0x00002c44       0xb0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
- .debug_frame   0x00002cf4       0x20 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
- .debug_frame   0x00002d14       0x5c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
- .debug_frame   0x00002d70       0x20 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
- .debug_frame   0x00002d90       0x78 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-freer.o)
- .debug_frame   0x00002e08       0x48 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
- .debug_frame   0x00002e50       0x30 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mlock.o)
- .debug_frame   0x00002e80       0x44 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-svfprintf.o)
- .debug_frame   0x00002ec4       0x28 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sprint_r.o)
- .debug_frame   0x00002eec       0x30 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ssprint_r.o)
- .debug_frame   0x00002f1c       0x3c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fclose.o)
- .debug_frame   0x00002f58       0x70 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fflush.o)
- .debug_frame   0x00002fc8       0x64 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fvwrite.o)
- .debug_frame   0x0000302c       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wsetup.o)
- .debug_frame   0x00003058       0x40 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memmove.o)
- .debug_frame   0x00003098       0x28 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
- .debug_frame   0x000030c0       0xdc C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-locale.o)
- .debug_frame   0x0000319c       0x40 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-localeconv.o)
- .debug_frame   0x000031dc       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sbrkr.o)
- .debug_frame   0x00003208       0x34 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
- .debug_frame   0x0000323c       0x28 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sysconf.o)
- .debug_frame   0x00003264       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memchr-stub.o)
- .debug_frame   0x00003290       0x30 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libm_a-s_frexp.o)
- .debug_frame   0x000032c0       0x34 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
- .debug_frame   0x000032f4       0x84 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-dtoa.o)
- .debug_frame   0x00003378      0x130 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mbtowc_r.o)
- .debug_frame   0x000034a8      0x270 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mprec.o)
- .debug_frame   0x00003718       0x48 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-reallocr.o)
- .debug_frame   0x00003760       0x9c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wctomb_r.o)
- .debug_frame   0x000037fc       0x60 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcrtomb.o)
- .debug_frame   0x0000385c       0x50 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcsrtombs.o)
- .debug_frame   0x000038ac       0x20 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ctype_.o)
- .debug_frame   0x000038cc       0x34 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ssputs_r.o)
- .debug_frame   0x00003900       0x70 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-makebuf.o)
- .debug_frame   0x00003970       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fstatr.o)
- .debug_frame   0x0000399c       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-isattyr.o)
- .debug_frame   0x000039c8       0x40 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-assert.o)
- .debug_frame   0x00003a08       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-callocr.o)
- .debug_frame   0x00003a34       0x8c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcsnrtombs.o)
- .debug_frame   0x00003ac0       0x6c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fiprintf.o)
- .debug_frame   0x00003b2c       0x88 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-vfiprintf.o)
- .debug_frame   0x00003bb4       0x28 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-abort.o)
- .debug_frame   0x00003bdc      0x118 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-signal.o)
- .debug_frame   0x00003cf4       0x3c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-signalr.o)
- .debug_frame   0x00003d30       0x50 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
- .debug_frame   0x00003d80       0xc4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
- .debug_frame   0x00003e44       0x20 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
- .debug_frame   0x00003e64       0x24 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
+.debug_frame    0x00000000     0x3ee0
+ .debug_frame   0x00000000       0x58 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+ .debug_frame   0x00000058      0x1cc CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_frame   0x00000224      0x19c CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_frame   0x000003c0      0x144 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_frame   0x00000504       0xe4 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_frame   0x000005e8      0x184 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_frame   0x0000076c      0x5c8 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_frame   0x00000d34      0xb18 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_frame   0x0000184c      0x418 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_frame   0x00001c64      0x5dc CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_frame   0x00002240       0x38 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
+ .debug_frame   0x00002278       0x58 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
+ .debug_frame   0x000022d0       0x60 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+ .debug_frame   0x00002330       0x28 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_frame   0x00002358       0xd8 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_frame   0x00002430      0x190 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
+ .debug_frame   0x000025c0       0x28 CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+ .debug_frame   0x000025e8       0x30 CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_frame   0x00002618       0x84 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+ .debug_frame   0x0000269c       0x64 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+ .debug_frame   0x00002700       0x40 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_frame   0x00002740       0x4c CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+ .debug_frame   0x0000278c       0xac C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubdf3.o)
+ .debug_frame   0x00002838       0x4c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_addsubsf3.o)
+ .debug_frame   0x00002884       0x38 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivsf3.o)
+ .debug_frame   0x000028bc      0x13c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-findfp.o)
+ .debug_frame   0x000029f8       0x34 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fwalk.o)
+ .debug_frame   0x00002a2c       0x80 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sprintf.o)
+ .debug_frame   0x00002aac       0x8c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-stdio.o)
+ .debug_frame   0x00002b38       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memset.o)
+ .debug_frame   0x00002b64       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-closer.o)
+ .debug_frame   0x00002b90       0x3c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-reent.o)
+ .debug_frame   0x00002bcc       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lseekr.o)
+ .debug_frame   0x00002bf8       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-readr.o)
+ .debug_frame   0x00002c24       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-writer.o)
+ .debug_frame   0x00002c50       0x20 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-errno.o)
+ .debug_frame   0x00002c70       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-init.o)
+ .debug_frame   0x00002c9c       0xb0 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-lock.o)
+ .debug_frame   0x00002d4c       0x20 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-strlen-stub.o)
+ .debug_frame   0x00002d6c       0x5c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__call_atexit.o)
+ .debug_frame   0x00002dc8       0x20 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-atexit.o)
+ .debug_frame   0x00002de8       0x78 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-freer.o)
+ .debug_frame   0x00002e60       0x48 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mallocr.o)
+ .debug_frame   0x00002ea8       0x30 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mlock.o)
+ .debug_frame   0x00002ed8       0x44 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-svfprintf.o)
+ .debug_frame   0x00002f1c       0x28 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sprint_r.o)
+ .debug_frame   0x00002f44       0x30 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ssprint_r.o)
+ .debug_frame   0x00002f74       0x3c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fclose.o)
+ .debug_frame   0x00002fb0       0x70 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fflush.o)
+ .debug_frame   0x00003020       0x64 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fvwrite.o)
+ .debug_frame   0x00003084       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wsetup.o)
+ .debug_frame   0x000030b0       0x40 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memmove.o)
+ .debug_frame   0x000030f0       0x28 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-strncpy.o)
+ .debug_frame   0x00003118       0xdc C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-locale.o)
+ .debug_frame   0x000031f4       0x40 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-localeconv.o)
+ .debug_frame   0x00003234       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sbrkr.o)
+ .debug_frame   0x00003260       0x34 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fini.o)
+ .debug_frame   0x00003294       0x28 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-sysconf.o)
+ .debug_frame   0x000032bc       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-memchr-stub.o)
+ .debug_frame   0x000032e8       0x30 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libm_a-s_frexp.o)
+ .debug_frame   0x00003318       0x34 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-__atexit.o)
+ .debug_frame   0x0000334c       0x84 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-dtoa.o)
+ .debug_frame   0x000033d0      0x130 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mbtowc_r.o)
+ .debug_frame   0x00003500      0x270 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-mprec.o)
+ .debug_frame   0x00003770       0x48 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-reallocr.o)
+ .debug_frame   0x000037b8       0x9c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wctomb_r.o)
+ .debug_frame   0x00003854       0x60 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcrtomb.o)
+ .debug_frame   0x000038b4       0x50 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcsrtombs.o)
+ .debug_frame   0x00003904       0x20 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ctype_.o)
+ .debug_frame   0x00003924       0x34 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-ssputs_r.o)
+ .debug_frame   0x00003958       0x70 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-makebuf.o)
+ .debug_frame   0x000039c8       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fstatr.o)
+ .debug_frame   0x000039f4       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-isattyr.o)
+ .debug_frame   0x00003a20       0x40 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-assert.o)
+ .debug_frame   0x00003a60       0x2c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-callocr.o)
+ .debug_frame   0x00003a8c       0x8c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-wcsnrtombs.o)
+ .debug_frame   0x00003b18       0x6c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-fiprintf.o)
+ .debug_frame   0x00003b84       0x88 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-vfiprintf.o)
+ .debug_frame   0x00003c0c       0x28 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-abort.o)
+ .debug_frame   0x00003c34      0x118 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-signal.o)
+ .debug_frame   0x00003d4c       0x3c C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libg.a(libc_a-signalr.o)
+ .debug_frame   0x00003d88       0x50 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_muldivdf3.o)
+ .debug_frame   0x00003dd8       0xc4 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_cmpdf2.o)
+ .debug_frame   0x00003e9c       0x20 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_unorddf2.o)
+ .debug_frame   0x00003ebc       0x24 C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a(_arm_fixdfsi.o)
 
 .debug_line_str
                 0x00000000      0x226

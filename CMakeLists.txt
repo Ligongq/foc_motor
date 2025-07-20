@@ -67,7 +67,7 @@ file(GLOB_RECURSE SOURCES
         "Drivers/*.*"
         "user/*.c"         # ✅ 这一行必须有
         "all/*.c"
-        "Control/.c"
+        "Control/*.c"
 )
 
 
