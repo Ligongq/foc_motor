@@ -1116,7 +1116,6 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .data          0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .bss           0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .bss.step      0x00000000        0x2 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .bss.divide    0x00000000        0x2 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .text          0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/user/key.c.obj
  .data          0x00000000        0x0 CMakeFiles/motor_foc.elf.dir/user/key.c.obj
@@ -2151,11 +2150,11 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
                 0x08003568                I2C1_ER_IRQHandler
                 0x08003568                USBWakeUp_IRQHandler
  *fill*         0x0800356a        0x2 
- .text.all      0x0800356c       0xcc CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .text.all      0x0800356c       0xe8 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
                 0x0800356c                all
  .text.SysTick_Handler
-                0x08003638       0x90 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
-                0x08003638                SysTick_Handler
+                0x08003654       0x74 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x08003654                SysTick_Handler
  .text.MT6816_ReadRaw_Alt
                 0x080036c8       0x88 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
                 0x080036c8                MT6816_ReadRaw_Alt
@@ -2608,19 +2607,21 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
                 0x20000828        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .bss.cnt_10ms.1
                 0x20000829        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- *fill*         0x2000082a        0x2 
- .bss.micro_idx.2
+ .bss.cnt_1ms.2
+                0x2000082a        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ *fill*         0x2000082b        0x1 
+ .bss.micro_idx
                 0x2000082c        0x4 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .bss.cnt_1ms.3
-                0x20000830        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x2000082c                micro_idx
  .bss.flag_100ms
-                0x20000831        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
-                0x20000831                flag_100ms
+                0x20000830        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x20000830                flag_100ms
  .bss.flag_10ms
-                0x20000832        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
-                0x20000832                flag_10ms
- .bss.flag_1ms  0x20000833        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
-                0x20000833                flag_1ms
+                0x20000831        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x20000831                flag_10ms
+ .bss.flag_1ms  0x20000832        0x1 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x20000832                flag_1ms
+ *fill*         0x20000833        0x1 
  .bss.send_buff
                 0x20000834       0x46 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
                 0x20000834                send_buff
@@ -2892,7 +2893,7 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
 LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libm.a
 LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x140ad
+.debug_info     0x00000000    0x14070
  .debug_info    0x00000000      0x496 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
  .debug_info    0x00000496      0x7a2 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_info    0x00000c38      0xcd9 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
@@ -2915,11 +2916,11 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
  .debug_info    0x000109e8      0xd18 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
  .debug_info    0x00011700      0xa80 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
  .debug_info    0x00012180       0x30 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
- .debug_info    0x000121b0      0x998 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .debug_info    0x00012b48      0x8ce CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
- .debug_info    0x00013416      0xc97 CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
+ .debug_info    0x000121b0      0x95b CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_info    0x00012b0b      0x8ce CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+ .debug_info    0x000133d9      0xc97 CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
 
-.debug_abbrev   0x00000000     0x3021
+.debug_abbrev   0x00000000     0x3011
  .debug_abbrev  0x00000000      0x1a7 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
  .debug_abbrev  0x000001a7      0x22d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_abbrev  0x000003d4      0x36d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
@@ -2942,9 +2943,9 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
  .debug_abbrev  0x000024a5      0x271 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
  .debug_abbrev  0x00002716      0x248 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
  .debug_abbrev  0x0000295e       0x24 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
- .debug_abbrev  0x00002982      0x25e CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .debug_abbrev  0x00002be0      0x235 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
- .debug_abbrev  0x00002e15      0x20c CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
+ .debug_abbrev  0x00002982      0x24e CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_abbrev  0x00002bd0      0x235 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+ .debug_abbrev  0x00002e05      0x20c CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
 
 .debug_loclists
                 0x00000000     0xa6f3
@@ -3040,7 +3041,7 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
                 0x00000f48       0x38 CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
 
 .debug_rnglists
-                0x00000000      0xba7
+                0x00000000      0xba6
  .debug_rnglists
                 0x00000000       0x27 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
  .debug_rnglists
@@ -3084,13 +3085,13 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
  .debug_rnglists
                 0x00000b32       0x19 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
  .debug_rnglists
-                0x00000b4b       0x1b CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+                0x00000b4b       0x1a CMakeFiles/motor_foc.elf.dir/all/start.c.obj
  .debug_rnglists
-                0x00000b66       0x1a CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+                0x00000b65       0x1a CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
  .debug_rnglists
-                0x00000b80       0x27 CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
+                0x00000b7f       0x27 CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
 
-.debug_line     0x00000000    0x12228
+.debug_line     0x00000000    0x12224
  .debug_line    0x00000000      0x3f1 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
  .debug_line    0x000003f1      0x620 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_line    0x00000a11      0x780 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
@@ -3113,37 +3114,37 @@ LOAD C:/PROGRA~1/JetBrains/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-e
  .debug_line    0x00010aa1      0x492 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
  .debug_line    0x00010f33      0x407 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
  .debug_line    0x0001133a       0x78 CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
- .debug_line    0x000113b2      0x5d6 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .debug_line    0x00011988      0x3b1 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
- .debug_line    0x00011d39      0x4ef CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
+ .debug_line    0x000113b2      0x5d2 CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_line    0x00011984      0x3b1 CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+ .debug_line    0x00011d35      0x4ef CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
 
-.debug_str      0x00000000     0x4579
- .debug_str     0x00000000     0x4579 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
+.debug_str      0x00000000     0x4570
+ .debug_str     0x00000000     0x4570 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
                                 0x3e3 (size before relaxing)
- .debug_str     0x00004579      0x85a CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
- .debug_str     0x00004579      0x8ff CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
- .debug_str     0x00004579      0x629 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
- .debug_str     0x00004579      0x42c CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
- .debug_str     0x00004579      0x657 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- .debug_str     0x00004579      0xb8d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
- .debug_str     0x00004579     0x16b1 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
- .debug_str     0x00004579      0xebd CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
- .debug_str     0x00004579      0xd20 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
- .debug_str     0x00004579      0x2b2 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
- .debug_str     0x00004579      0x3d3 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
- .debug_str     0x00004579      0x1d2 CMakeFiles/motor_foc.elf.dir/Src/sin.c.obj
- .debug_str     0x00004579      0x6f2 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
- .debug_str     0x00004579      0x246 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_str     0x00004579      0x98a CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_str     0x00004579      0x413 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
- .debug_str     0x00004579      0x23f CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
- .debug_str     0x00004579      0x27b CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_str     0x00004579      0xc21 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
- .debug_str     0x00004579      0xa42 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
- .debug_str     0x00004579       0x8c CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
- .debug_str     0x00004579      0x7ec CMakeFiles/motor_foc.elf.dir/all/start.c.obj
- .debug_str     0x00004579      0x70b CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
- .debug_str     0x00004579      0x7b3 CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
+ .debug_str     0x00004570      0x85a CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+ .debug_str     0x00004570      0x8ff CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
+ .debug_str     0x00004570      0x629 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
+ .debug_str     0x00004570      0x42c CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj
+ .debug_str     0x00004570      0x657 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ .debug_str     0x00004570      0xb8d CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c.obj
+ .debug_str     0x00004570     0x16b1 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
+ .debug_str     0x00004570      0xebd CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+ .debug_str     0x00004570      0xd20 CMakeFiles/motor_foc.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+ .debug_str     0x00004570      0x2b2 CMakeFiles/motor_foc.elf.dir/Src/gpio.c.obj
+ .debug_str     0x00004570      0x3d3 CMakeFiles/motor_foc.elf.dir/Src/main.c.obj
+ .debug_str     0x00004570      0x1d2 CMakeFiles/motor_foc.elf.dir/Src/sin.c.obj
+ .debug_str     0x00004570      0x6f2 CMakeFiles/motor_foc.elf.dir/Src/spi.c.obj
+ .debug_str     0x00004570      0x246 CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x00004570      0x98a CMakeFiles/motor_foc.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_str     0x00004570      0x413 CMakeFiles/motor_foc.elf.dir/Src/syscalls.c.obj
+ .debug_str     0x00004570      0x23f CMakeFiles/motor_foc.elf.dir/Src/sysmem.c.obj
+ .debug_str     0x00004570      0x27b CMakeFiles/motor_foc.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_str     0x00004570      0xc21 CMakeFiles/motor_foc.elf.dir/Src/tim.c.obj
+ .debug_str     0x00004570      0xa42 CMakeFiles/motor_foc.elf.dir/Src/usart.c.obj
+ .debug_str     0x00004570       0x8c CMakeFiles/motor_foc.elf.dir/Startup/startup_stm32f103cbtx.s.obj
+ .debug_str     0x00004570      0x7de CMakeFiles/motor_foc.elf.dir/all/start.c.obj
+ .debug_str     0x00004570      0x70b CMakeFiles/motor_foc.elf.dir/user/mt6816.c.obj
+ .debug_str     0x00004570      0x7b3 CMakeFiles/motor_foc.elf.dir/user/stepmotor.c.obj
 
 .comment        0x00000000       0x45
  .comment       0x00000000       0x45 CMakeFiles/motor_foc.elf.dir/Control/speed.c.obj
