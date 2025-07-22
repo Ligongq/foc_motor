@@ -32,5 +32,5 @@ void MT6816_ReadAngleDeg_Alt(void)
 		return;
 	}
 	PID.Mt6816_date_now = raw;
-	PID.angle_get_now = (float)raw * (360.0f / 16384.0f);
+	//PID.angle_get_now = (float)raw * (360.0f / 16384.0f);
 }

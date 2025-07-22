@@ -3,6 +3,7 @@
 //
 
 #include "debug.h"
+
 /* --------- 可调参数 --------- */
 #define UART_TX_BUF_SIZE   128         /* FIFO 总字节数 (2^n 最快) */
 #define UART_TX_TMP_LEN     96         /* 单次 sprintf 临时缓冲 */
@@ -76,12 +77,12 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 				line[line_idx] = 0;  // 封尾
 
 				/* 直接解析固定格式 */
-				if      (sscanf(line, "sp=%f", &PID.speed_kp)  == 1)
-					uart1_printf("sp=%.4f\r\n", PID.speed_kp);
+				if(sscanf(line, "sp=%f", &PID.speed_kp)  == 1)
+					LED1_TOG
 				else if (sscanf(line, "si=%f", &PID.speed_ki)  == 1)
-					uart1_printf("si=%.4f\r\n", PID.speed_ki);
+					LED1_TOG
 				else if (sscanf(line, "tar=%f", &PID.target_speed) == 1)
-					uart1_printf("tar=%.1f\r\n", PID.target_speed);
+					LED1_TOG
 				else
 					uart1_printf("err\r\n");
 

@@ -21,18 +21,20 @@
 #define SPEED_ERR_SUM_MIN -1000.0f
 typedef struct
 {
-        float speed_kp;
-        float speed_ki;
-        float target_speed;
-        float now_speed;
+     volatile  float speed_kp;
+	volatile  float speed_kd;
+     volatile  float speed_ki;
+     volatile  float target_speed;
+     volatile  float now_speed;
+	 volatile int speed_out;
 
-		uint16_t Mt6816_date_now;
-		float angle_get_now;
+	volatile	uint16_t Mt6816_date_now;
+	volatile	float angle_get_now;
 
 } control;
 extern  control PID;
 void PID_Init(void);
-uint16_t Speed_PID_Control(void);
-
+void Speed_PID_Control(float speed_now);
+void speed_control_2KHZ(void);
 void Speed_Debug_Init(float kp, float ki, float target_speed);
 #endif //MOTOR_FOC_SPEED_H
