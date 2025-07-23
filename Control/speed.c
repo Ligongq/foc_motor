@@ -3,64 +3,63 @@
 //
 
 #include "speed.h"
-control PID;
-#define I_TERM_LIM        8000.0f      /* 积分上限 deg/s -> microstep/s */
-#define OUT_STEP_LIM         512       /* 最大一次 microstep 增量 (0–1023) */
-#define LPF_ALPHA            0.040f     /* 速度 LPF 系数，0.1≈2 kHz 截止 */
-static float  i_term      = 0.0f;       /* 积分累加器 */
-
+#include "stdlib.h"
+struct control PID;
 void PID_Init(void )
 {
 	PID.target_speed = 0;
 	PID.speed_ki = 0;
 	PID.speed_kp = 0;
 	PID.now_speed = 0;
+	PID.Leadangle_Kp = 1.5;
+	PID.Leadangle_Kd     = 0;
+	PID.Leadangle_Ki     = 0;
 }
 /* 1. 每 50 µs 调用一次：更新速度低通 20KHZ*/
 void speed_control_2KHZ(void)
-{	static uint16_t last_cnt = 0;
-       static uint16_t cnt_2KHZ = 0;
-       static float    speed_sum = 0.0f;
-       float diff;
-       MT6816_ReadAngleDeg_Alt();
-       diff = (float)PID.Mt6816_date_now - (float)last_cnt;
-       if (diff >  8192.0f) diff -= 16384.0f;
-       if (diff < -8192.0f) diff += 16384.0f;
+{
+	static uint16_t last_cnt ;
+    static int cnt_2KHZ=0, diff=0;
+
+	MT6816_ReadAngleDeg_Alt();
+       diff =(int)(PID.Mt6816_date_now - last_cnt);
+       if (diff >  8192) diff -= 16384;
+       if (diff < -8192) diff += 16384;
        last_cnt = PID.Mt6816_date_now;
-
-       speed_sum += diff ;
+       PID.Increment += diff ;
        cnt_2KHZ++;
-
        if (cnt_2KHZ >= 20) {
-               if (fabsf(speed_sum) < 1e-3f) PID.now_speed = 0.0f;
-               else PID.now_speed = speed_sum / 20.0f;
-               speed_sum = 0.0f;
+		       PID.now_speed = (float)PID.Increment /20.0f;
+			   PID.Increment = 0;
                cnt_2KHZ = 0;
                Speed_PID_Control(PID.now_speed);
+			   Angle_PID();
        }
 }
 void Speed_PID_Control(float speed_now)
 {
-	static float last_bias = 0;
-	static float integral = 0;
+	static float bias, last_bias, integral_bias;
+	bias =PID.target_speed - speed_now;
+	bias = PID.target_speed - speed_now;
+// 积分抗风up/溢出
+	//if ((bias * last_bias < 0) || abs(PID.speed_out) > 500)
+	//else if (abs(integral * ki) < 300.0f)
+	if (bias * last_bias < 0 || (PID.speed_out > 500 || PID.speed_out < -500)) {
+		integral_bias = 0;
+	} else {
+		if (integral_bias * PID.speed_ki > -300 && integral_bias * PID.speed_ki < 300) {
+			integral_bias += bias;
+		}
+	}
+// PID 公式
+	float out =(float)(PID.speed_kp * bias) + PID.speed_ki * integral_bias + PID.speed_kd * (bias - last_bias);
 
-	float bias = PID.target_speed - speed_now;
-	float kp = PID.speed_kp;
-	float ki = PID.speed_ki;
-	float kd = PID.speed_kd;
-
-	if ((bias * last_bias < 0) || fabsf(PID.speed_out) > 500.0f)
-		integral = 0;
-	else if (fabsf(integral * ki) < 300.0f)
-		integral += bias;
-
-	float out = kp * bias + ki * integral + kd * (bias - last_bias);
-
+// 限幅
 	if (out > 700.0f) out = 700.0f;
 	if (out < -700.0f) out = -700.0f;
-
-	PID.speed_out = (int)out;
 	last_bias = bias;
+	PID.speed_out = (int)out;
+
 }
 
 //		static uint32_t now_time,last_time=0;
@@ -80,12 +79,32 @@ void Speed_PID_Control(float speed_now)
 //        return  (uint16_t)out;}
 
 //////////////////////////////////////////
-void Speed_Debug_Init(float kp, float ki, float target_speed)
+void Speed_Debug_Init(float kp, float ki, int target_speed)
 {
 	PID_Init();
 	PID.speed_kp = kp;
 	PID.speed_ki = ki;
 	PID.target_speed = target_speed;
+}
+
+void Angle_PID(void)
+{
+	static float last_bias, integral_bias = 0, bias;
+	bias = PID.now_speed;                                                                // 更新数据
+	if (integral_bias * PID.Leadangle_Ki < 64 && integral_bias * PID.Leadangle_Ki > -64) // 积分项限幅度
+	{
+		integral_bias += bias;
+	}
+	PID.Lead_angle_Out = (int)(PID.Leadangle_Kp * bias + integral_bias * PID.Leadangle_Ki + PID.Leadangle_Kd * (bias - last_bias)); // 计算输出值
+	// 输出限幅
+	if (PID.Lead_angle_Out > 512) {
+		PID.Lead_angle_Out = 512;
+	}
+	if (PID.Lead_angle_Out < -512) {
+		PID.Lead_angle_Out = -512;
+	}
+	PID.Lead_angle_Out += 1024;
+	last_bias = bias;
 }
 
 

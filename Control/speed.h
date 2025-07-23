@@ -17,24 +17,31 @@
 #include "mt6816.h"
 #include <stdio.h>
 #include <string.h>
-#define SPEED_ERR_SUM_MAX 1000.0f
-#define SPEED_ERR_SUM_MIN -1000.0f
-typedef struct
+#include "speed.h"
+
+struct control
 {
      volatile  float speed_kp;
 	volatile  float speed_kd;
      volatile  float speed_ki;
-     volatile  int target_speed;
-     volatile  int now_speed;
+	volatile int32_t Increment;
+     volatile  float target_speed;
+     volatile  float now_speed;
 	 volatile int speed_out;
 
 	volatile	uint16_t Mt6816_date_now;
 	volatile	float angle_get_now;
 
-} control;
-extern  control PID;
+
+	volatile float Leadangle_Kp;
+	volatile float Leadangle_Ki;
+	volatile float Leadangle_Kd;
+	volatile int Lead_angle_Out;
+};
+extern struct control PID;
 void PID_Init(void);
 void Speed_PID_Control(float speed_now);
 void speed_control_2KHZ(void);
-void Speed_Debug_Init(float kp, float ki, float target_speed);
+void Angle_PID(void);
+void Speed_Debug_Init(float kp, float ki, int target_speed);
 #endif //MOTOR_FOC_SPEED_H
