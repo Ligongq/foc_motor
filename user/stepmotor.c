@@ -10,7 +10,6 @@
  Coil_Typedef coil_a = {0,0,0};
  Coil_Typedef coil_b = {0,0,0};
 #define PWM_MAX     1023  // PWM周期
-
 #define RATED_I_MA   1700     /* 3.3 V / (10×0.30) ≈ 1100 mA */
 
 uint32_t dac_max=0;
@@ -27,37 +26,16 @@ void Motor_Brake(void)
 	AP_H;	AM_H;
 	BP_H;	BM_H;
 }
-void Motor_Test_Rotate(void)
-{   Motor_Sleep();
-	for (int step = 0; step < 400; step++) // 转动 500 步
-	{
-		switch (step % 4) {
-			case 0: // A+
-				AP_H;
-				AM_L;
-				BP_L;	BM_L;
-				break;
-			case 1: // B+
-				BP_H;
-				BM_L;
-				AP_L;	AM_L;
-				break;
-			case 2: // A-
-				AP_L;
-				AM_H;
-				BP_L;	BM_L;
-				break;
-			case 3: // B-
-				BP_L;
-				BM_H;
-				AP_L;	AM_L;
-				break;
-		}
-		HAL_Delay(3);
+void Motor_Test_Rotate(uint8_t step)
+{
+	switch (step) {
+		case 0: AP_H; AM_L; BP_L; BM_L; break;
+		case 1: BP_H; BM_L; AP_L; AM_L; break;
+		case 2: AP_L; AM_H; BP_L; BM_L; break;
+		case 3: BP_L; BM_H; AP_L; AM_L; break;
+		default: AP_L; AM_L; BP_L; BM_L; break;
 	}
 }
-
-
 void Motor_MicroStep(uint32_t divide, int32_t elec_ma)
 {
 

@@ -34,7 +34,7 @@ extern  Coil_Typedef coil_a;	//电流控制
 extern Coil_Typedef coil_b;	//电流控制
 void Motor_Sleep(void);
 void Motor_Brake(void);
-void Motor_Test_Rotate(void);
+void Motor_Test_Rotate(uint8_t step);
 void Motor_MicroStep(uint32_t divide, int32_t elec_ma);
 #endif //MOTOR_FOC_MOTOR_H
 

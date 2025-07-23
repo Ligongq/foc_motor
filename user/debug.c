@@ -81,7 +81,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 					LED1_TOG
 				else if (sscanf(line, "si=%f", &PID.speed_ki)  == 1)
 					LED1_TOG
-				else if (sscanf(line, "tar=%f", &PID.target_speed) == 1)
+				else if (sscanf(line, "tar=%d", &PID.target_speed) == 1)
 					LED1_TOG
 				else
 					uart1_printf("err\r\n");

@@ -24,8 +24,8 @@ typedef struct
      volatile  float speed_kp;
 	volatile  float speed_kd;
      volatile  float speed_ki;
-     volatile  float target_speed;
-     volatile  float now_speed;
+     volatile  int target_speed;
+     volatile  int now_speed;
 	 volatile int speed_out;
 
 	volatile	uint16_t Mt6816_date_now;

@@ -3,7 +3,7 @@
 //
 #ifndef __START_H_
 #define __START_H_
-
+#include "foc.h"
 #include "main.h"
 #include "tim.h"
 #include "usart.h"
@@ -18,5 +18,5 @@
 #include "stepmotor_utils.h"
 #include "dma.h"
 void all(void);
-extern char send_buff[70];
+
 #endif //MOTOR_FOC_START_H

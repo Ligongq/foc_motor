@@ -19,24 +19,25 @@ void PID_Init(void )
 /* 1. 每 50 µs 调用一次：更新速度低通 20KHZ*/
 void speed_control_2KHZ(void)
 {	static uint16_t last_cnt = 0;
-	static uint16_t cnt_2KHZ = 0;
-	static int32_t speed_sum = 0,diff=0;
-	MT6816_ReadAngleDeg_Alt();
-	diff = (int)(PID.Mt6816_date_now - last_cnt)*20;
-	if (diff >  15000) diff -= 16384;
-	if (diff < -15000) diff += 16384;
-	last_cnt = PID.Mt6816_date_now;
+       static uint16_t cnt_2KHZ = 0;
+       static float    speed_sum = 0.0f;
+       float diff;
+       MT6816_ReadAngleDeg_Alt();
+       diff = (float)PID.Mt6816_date_now - (float)last_cnt;
+       if (diff >  8192.0f) diff -= 16384.0f;
+       if (diff < -8192.0f) diff += 16384.0f;
+       last_cnt = PID.Mt6816_date_now;
 
-	speed_sum += diff;
-	cnt_2KHZ++;
+       speed_sum += diff ;
+       cnt_2KHZ++;
 
-	if (cnt_2KHZ == 10) {
-		if(speed_sum==0){PID.now_speed=0;}
-		else PID.now_speed = (speed_sum / 10.0f);
-		speed_sum = 0;
-		cnt_2KHZ = 0;
-		Speed_PID_Control(PID.now_speed);
-	}
+       if (cnt_2KHZ >= 20) {
+               if (fabsf(speed_sum) < 1e-3f) PID.now_speed = 0.0f;
+               else PID.now_speed = speed_sum / 20.0f;
+               speed_sum = 0.0f;
+               cnt_2KHZ = 0;
+               Speed_PID_Control(PID.now_speed);
+       }
 }
 void Speed_PID_Control(float speed_now)
 {
