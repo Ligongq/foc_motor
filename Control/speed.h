@@ -36,7 +36,7 @@ struct control
 	volatile float Leadangle_Kp;
 	volatile float Leadangle_Ki;
 	volatile float Leadangle_Kd;
-	volatile int Lead_angle_Out;
+
 };
 extern struct control PID;
 void PID_Init(void);

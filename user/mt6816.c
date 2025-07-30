@@ -56,7 +56,7 @@ void Encoder_Cali(void)
 	Set_PWM_A(0);
 	Write_CaliData_Array(SampleDataAverage, 200);
 	Flash_Write_Zero(SampleDataAverage[199]);
-	uart1_printf("校准完成并写入Flash\r\n");
+
 }
 void Print_All_LUT(void)
 {

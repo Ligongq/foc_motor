@@ -11,7 +11,7 @@ void PID_Init(void )
 	PID.speed_ki = 0;
 	PID.speed_kp = 0;
 	PID.now_speed = 0;
-	PID.Leadangle_Kp = 1.5;
+	PID.Leadangle_Kp = 0;
 	PID.Leadangle_Kd     = 0;
 	PID.Leadangle_Ki     = 0;
 }
@@ -27,39 +27,29 @@ void speed_control_2KHZ(void)
        if (diff < -8192) diff += 16384;
        last_cnt = PID.Mt6816_date_now;
        PID.Increment += diff ;
-       cnt_2KHZ++;
-       if (cnt_2KHZ >= 20) {
-		       PID.now_speed = (float)PID.Increment /20.0f;
-			   PID.Increment = 0;
-               cnt_2KHZ = 0;
-               Speed_PID_Control(PID.now_speed);
-			   Angle_PID();
-       }
+       if (++cnt_2KHZ < 10) return;
+       PID.now_speed =(float)PID.Increment/10;
+	   PID.Increment = 0;
+       cnt_2KHZ = 0;
+       Speed_PID_Control(PID.now_speed);
+	   Angle_PID();
 }
 void Speed_PID_Control(float speed_now)
 {
-	static float bias, last_bias, integral_bias;
-	bias =PID.target_speed - speed_now;
+	static float bias, last_bias, integral_bias=0;
 	bias = PID.target_speed - speed_now;
 // 积分抗风up/溢出
 	//if ((bias * last_bias < 0) || abs(PID.speed_out) > 500)
 	//else if (abs(integral * ki) < 300.0f)
-	if (bias * last_bias < 0 || (PID.speed_out > 500 || PID.speed_out < -500)) {
-		integral_bias = 0;
-	} else {
-		if (integral_bias * PID.speed_ki > -300 && integral_bias * PID.speed_ki < 300) {
-			integral_bias += bias;
-		}
-	}
+	if(integral_bias * PID.speed_ki > -300 && integral_bias * PID.speed_ki < 300)
+		integral_bias+=bias;
 // PID 公式
 	float out =(float)(PID.speed_kp * bias) + PID.speed_ki * integral_bias + PID.speed_kd * (bias - last_bias);
-
 // 限幅
-	if (out > 700.0f) out = 700.0f;
-	if (out < -700.0f) out = -700.0f;
+	if (out > 500.0f) out = 500.0f;
+	if (out < -500.0f) out = -500.0f;
 	last_bias = bias;
 	PID.speed_out = (int)out;
-
 }
 
 //		static uint32_t now_time,last_time=0;
@@ -95,15 +85,15 @@ void Angle_PID(void)
 	{
 		integral_bias += bias;
 	}
-	PID.Lead_angle_Out = (int)(PID.Leadangle_Kp * bias + integral_bias * PID.Leadangle_Ki + PID.Leadangle_Kd * (bias - last_bias)); // 计算输出值
+	foc.lead_angle = (int)(PID.Leadangle_Kp * bias + integral_bias * PID.Leadangle_Ki + PID.Leadangle_Kd * (bias - last_bias)); // 计算输出值
 	// 输出限幅
-	if (PID.Lead_angle_Out > 512) {
-		PID.Lead_angle_Out = 512;
+	if (foc.lead_angle > 512) {
+		foc.lead_angle = 512;
 	}
-	if (PID.Lead_angle_Out < -512) {
-		PID.Lead_angle_Out = -512;
+	if (foc.lead_angle < -512) {
+		foc.lead_angle = -512;
 	}
-	PID.Lead_angle_Out += 1024;
+	foc.lead_angle += 1024;
 	last_bias = bias;
 }
 
